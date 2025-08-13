@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://de1dtfsvidlw2"]
+
+[ext_resource type="Script" uid="uid://dxmvf6a6bemx7" path="res://enemy.gd" id="1_dxifv"]
+[ext_resource type="Texture2D" uid="uid://cbktdnlbm6hq5" path="res://Image/Enemy/Dungeon_Monsters1.png" id="2_4gyqm"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_qi2p4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
+atlas = ExtResource("2_4gyqm")
+region = Rect2(168, 128, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
+atlas = ExtResource("2_4gyqm")
+region = Rect2(144, 128, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epg4t"]
+atlas = ExtResource("2_4gyqm")
+region = Rect2(192, 128, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3yqyl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi2p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iifgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi2p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epg4t")
+}],
+"loop": true,
+"name": &"Mushroom",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wujgv"]
+size = Vector2(18, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qi2p4"]
+size = Vector2(22, 35)
+
+[node name="Enemy" type="CharacterBody2D" groups=["Enemys"]]
+script = ExtResource("1_dxifv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_3yqyl")
+animation = &"Mushroom"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 5)
+shape = SubResource("RectangleShape2D_wujgv")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -29.0
+offset_top = -51.0
+offset_right = 2.0
+offset_bottom = 2.0
+theme_override_fonts/font = ExtResource("3_qi2p4")
+text = "HP : "
+
+[node name="HurtBox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-1, 5.5)
+shape = SubResource("RectangleShape2D_qi2p4")
+debug_color = Color(2.64719e-06, 0.633817, 0.436175, 0.42)
+
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
