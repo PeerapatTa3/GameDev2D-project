@@ -1,0 +1,11 @@
+res://Components/health_component.tscn
+res://Components/hurtbox_component.tscn
+res://Scene/GameCharacter/player_v_2.tscn
+res://Scene/test_ground.tscn
+res://Scene/test.tscn
+res://Components/hitbox_component.tscn
+res://Scene/GameCharacter/dummy.tscn
+res://health_component.gd
+res://hurtbox_component.gd
+res://Scene/GameCharacter/player_v_2.gd
+res://hitbox_component.gd

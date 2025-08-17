@@ -403,13 +403,13 @@ size = Vector2(22, 29)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_onrkg")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2(2, 2)
-
 [node name="AttackAnimation" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_hiqhm")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(2, 2)
 
 [node name="WalkingAnimation" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)

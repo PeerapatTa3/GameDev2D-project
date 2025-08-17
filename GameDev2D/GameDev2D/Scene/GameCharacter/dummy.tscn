@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://doeagxnlrd8l0"]
+
+[ext_resource type="Texture2D" uid="uid://cbktdnlbm6hq5" path="res://Image/Enemy/Dungeon_Monsters1.png" id="1_vrprb"]
+[ext_resource type="PackedScene" uid="uid://clb1jf3m4iu1k" path="res://Components/health_component.tscn" id="2_qyg6o"]
+[ext_resource type="PackedScene" uid="uid://bkj7vpx3aeyi1" path="res://Components/hurtbox_component.tscn" id="3_bx1em"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4ws0"]
+size = Vector2(13, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0tr3b"]
+size = Vector2(11, 19)
+
+[node name="Dummy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vrprb")
+hframes = 12
+vframes = 8
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_qyg6o")]
+position = Vector2(-13, -23)
+MAX_HP = 50
+
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("HealthComponent") instance=ExtResource("3_bx1em")]
+HealthComponent = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+position = Vector2(-0.5, 5)
+shape = SubResource("RectangleShape2D_h4ws0")
+debug_color = Color(0.963774, 0.180563, 0.16243, 0.42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 5.5)
+shape = SubResource("RectangleShape2D_0tr3b")

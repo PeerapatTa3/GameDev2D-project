@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca5bjrnfbtykt"]
+
+[ext_resource type="PackedScene" uid="uid://mxy4iubwpwox" path="res://Scene/test_ground.tscn" id="1_o6ksy"]
+[ext_resource type="PackedScene" uid="uid://vmiu1prydpih" path="res://Scene/GameCharacter/player_v_2.tscn" id="2_vrsyt"]
+[ext_resource type="PackedScene" uid="uid://doeagxnlrd8l0" path="res://Scene/GameCharacter/dummy.tscn" id="3_vrsyt"]
+
+[node name="Test" type="Node2D"]
+scale = Vector2(2, 2)
+
+[node name="TestGround" parent="." instance=ExtResource("1_o6ksy")]
+
+[node name="PlayerV2" parent="." instance=ExtResource("2_vrsyt")]
+position = Vector2(347, 161)
+
+[node name="Dummy" parent="." instance=ExtResource("3_vrsyt")]
+position = Vector2(440.5, 161)
