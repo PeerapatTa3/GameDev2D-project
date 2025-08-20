@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://vmiu1prydpih"]
+[gd_scene load_steps=36 format=3 uid="uid://vmiu1prydpih"]
 
 [ext_resource type="Texture2D" uid="uid://624fcsb4r3rf" path="res://Image/Player/Dungeon_HeroMan1.png" id="1_0wffo"]
 [ext_resource type="Script" uid="uid://cd5dv5l4x0rc6" path="res://Scene/GameCharacter/player_v_2.gd" id="1_dnti4"]
@@ -6,6 +6,95 @@
 [ext_resource type="Texture2D" uid="uid://jrnm72ur7lv6" path="res://Image/Player/Dungeon_HeroManSword1.png" id="2_mtpmn"]
 [ext_resource type="PackedScene" uid="uid://bkj7vpx3aeyi1" path="res://Components/hurtbox_component.tscn" id="4_b1ikc"]
 [ext_resource type="PackedScene" uid="uid://dibi7luv2xcet" path="res://Components/hitbox_component.tscn" id="4_mtpmn"]
+
+[sub_resource type="Animation" id="Animation_mtpmn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_5bx0p"]
+resource_name = "Attack_down"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_3mhyy"]
+resource_name = "attack_left"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_nnop2"]
+resource_name = "attack_right"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [8, 8, 9, 10]
+}
+
+[sub_resource type="Animation" id="Animation_d3ur8"]
+resource_name = "attack_up"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3mhyy"]
+_data = {
+&"Attack_down": SubResource("Animation_5bx0p"),
+&"RESET": SubResource("Animation_mtpmn"),
+&"attack_left": SubResource("Animation_3mhyy"),
+&"attack_right": SubResource("Animation_nnop2"),
+&"attack_up": SubResource("Animation_d3ur8")
+}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5bx0p"]
 atlas = ExtResource("2_mtpmn")
@@ -182,7 +271,19 @@ script = ExtResource("1_dnti4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -13)
+texture = ExtResource("2_mtpmn")
+hframes = 4
+vframes = 4
+
+[node name="Attack" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_3mhyy")
+}
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 sprite_frames = SubResource("SpriteFrames_3mhyy")
 animation = &"attack_down"
 

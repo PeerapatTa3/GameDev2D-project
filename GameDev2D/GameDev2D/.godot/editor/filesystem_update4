@@ -1,1 +1,10 @@
 res://Scene/GameCharacter/player_v_2.tscn
+res://Components/health_component.tscn
+res://Components/hurtbox_component.tscn
+res://Scene/test_ground.tscn
+res://Scene/test.tscn
+res://Components/hitbox_component.tscn
+res://Scene/GameCharacter/dummy.tscn
+res://map.tscn
+res://Scene/Manager/main.tscn
+res://Scene/GameCharacter/player.tscn
