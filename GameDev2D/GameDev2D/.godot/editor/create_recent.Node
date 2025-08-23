@@ -1,9 +1,11 @@
-CollisionShape2D
+AnimationTree
 Sprite2D
+Node2D
+AnimationPlayer
+CollisionShape2D
 CharacterBody2D
 Area2D
 TileMapLayer
 Camera2D
 AnimatedSprite2D
-Node2D
 Label

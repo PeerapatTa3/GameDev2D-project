@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://doeagxnlrd8l0" path="res://Scene/GameCharacter/dummy.tscn" id="3_vrsyt"]
 
 [node name="Test" type="Node2D"]
-scale = Vector2(2, 2)
+scale = Vector2(6, 6)
 
 [node name="TestGround" parent="." instance=ExtResource("1_o6ksy")]
 

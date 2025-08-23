@@ -1,1 +1,15 @@
 res://Scene/GameCharacter/player_v_2.tscn
+res://Components/health_component.tscn
+res://Components/hurtbox_component.tscn
+res://Scene/test_ground.tscn
+res://Scene/test.tscn
+res://Components/hitbox_component.tscn
+res://Scene/GameCharacter/dummy.tscn
+res://Components/move_component.tscn
+res://Scene/GameCharacter/player_anim_tree.gd
+res://Image/Minifantasy_Dungeon_Assets/Characters/Human/AnimationInfo.txt
+res://Scene/GameCharacter/player_v_2.tres
+res://animation/test.tscn
+res://animation/player_state.tres
+res://Scene/GameCharacter/player_v_2.gd
+res://animation/player_attack.tres
