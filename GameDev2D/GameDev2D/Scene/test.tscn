@@ -17,5 +17,5 @@ position = Vector2(223.333, 72.8333)
 goal = NodePath("../PlayerV2")
 
 [node name="Dummy2" parent="." node_paths=PackedStringArray("goal") instance=ExtResource("3_vrsyt")]
-position = Vector2(113.333, 13.6667)
+position = Vector2(223, 34)
 goal = NodePath("../PlayerV2")

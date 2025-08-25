@@ -444,7 +444,7 @@ _data = {
 &"walk_up": SubResource("Animation_gwmxx")
 }
 
-[node name="PlayerV2" type="CharacterBody2D"]
+[node name="PlayerV2" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_dnti4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -478,9 +478,9 @@ hframes = 4
 vframes = 4
 frame = 4
 
-[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("HealthComponent", "MoveComponent") instance=ExtResource("4_b1ikc")]
-HealthComponent = NodePath("../HealthComponent")
-MoveComponent = NodePath("../MoveComponent")
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "Movecomponent") instance=ExtResource("4_b1ikc")]
+Healthcomponent = NodePath("../HealthComponent")
+Movecomponent = NodePath("../MoveComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
 position = Vector2(0.5, -0.5)
