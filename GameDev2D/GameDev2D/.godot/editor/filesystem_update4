@@ -10,6 +10,6 @@ res://Components/hurtbox_component.tscn
 res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Scene/GameCharacter/dummy.tscn
-res://Components/hitbox_component.tscn
-res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/AnimationInfo.txt
 res://Components/health_component.tscn
+res://Scene/main_menu.tscn
+res://main_menu.gd
