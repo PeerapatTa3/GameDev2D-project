@@ -1,3 +1,5 @@
+Node2D
+TileMapLayer
 Panel
 TextureRect
 Label
@@ -8,7 +10,5 @@ CollisionShape2D
 Area2D
 StaticBody2D
 RayCast2D
-Node2D
 AnimationTree
 AnimationPlayer
-CharacterBody2D

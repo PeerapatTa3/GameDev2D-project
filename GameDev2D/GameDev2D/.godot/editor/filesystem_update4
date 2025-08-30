@@ -1,9 +1,8 @@
-res://Components/move_component.tscn
 res://animation/player_idle.tres
 res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
-res://Scene/test_ground.tscn
+res://map.tscn
 res://Scene/test.tscn
 res://Scene/GameCharacter/player_v_2.tscn
 res://Components/hurtbox_component.tscn
@@ -12,4 +11,4 @@ res://Components/path_finding_component.tscn
 res://Scene/GameCharacter/dummy.tscn
 res://Components/health_component.tscn
 res://Scene/main_menu.tscn
-res://main_menu.gd
+res://Scene/test_ground.tscn
