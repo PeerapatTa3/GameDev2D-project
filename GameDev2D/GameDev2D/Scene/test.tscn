@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ca5bjrnfbtykt"]
+[gd_scene load_steps=5 format=3 uid="uid://ca5bjrnfbtykt"]
 
 [ext_resource type="PackedScene" uid="uid://mxy4iubwpwox" path="res://Scene/test_ground.tscn" id="1_o6ksy"]
 [ext_resource type="PackedScene" uid="uid://hcbw0fopbrsl" path="res://Scene/GameCharacter/player_v_2.tscn" id="2_vrsyt"]
 [ext_resource type="PackedScene" uid="uid://doeagxnlrd8l0" path="res://Scene/GameCharacter/dummy.tscn" id="3_vrsyt"]
+[ext_resource type="PackedScene" uid="uid://bfsc8yc2mwpjx" path="res://Scene/Items/damage_potion.tscn" id="4_asc4v"]
 
 [node name="Test" type="Node2D"]
 scale = Vector2(6, 6)
@@ -19,3 +20,7 @@ goal = NodePath("../PlayerV2")
 [node name="Dummy2" parent="." node_paths=PackedStringArray("goal") instance=ExtResource("3_vrsyt")]
 position = Vector2(223, 34)
 goal = NodePath("../PlayerV2")
+
+[node name="DamagePotion" parent="." instance=ExtResource("4_asc4v")]
+position = Vector2(96.8333, 68.6667)
+scale = Vector2(0.5, 0.5)

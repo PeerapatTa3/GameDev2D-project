@@ -3,7 +3,7 @@ extends Node2D
 @export var timer : float
 @export var detection_length : int
 
-@onready var player = get_tree().get_nodes_in_group("Player").get(0)
+@onready var player = get_tree().get_first_node_in_group("Player")
 @onready var parent : Node = get_parent()
 @onready var original_position :Vector2 = global_position
 
