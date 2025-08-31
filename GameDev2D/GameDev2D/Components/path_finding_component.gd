@@ -27,7 +27,7 @@ func _physics_process(delta: float) -> void:
 		detected_goal = false
 
 func get_direction() -> Vector2:
-	if dir != null && detected_goal:
+	if dir != null && detected_goal && !player.isdead:
 		return dir.normalized()
 	elif !$NavigationAgent2D.is_target_reached() && !detected_goal:
 		var nav_point_dir = to_local($NavigationAgent2D.get_next_path_position()).normalized()

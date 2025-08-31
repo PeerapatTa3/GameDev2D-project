@@ -1,12 +1,13 @@
 extends State
 
 @export var pathfinder : PathFindingComponent
-@export var parent : CharacterBody2D
+var parent
 
 var speed
 var velocity = Vector2.ZERO
 
 func enter() -> void:
+	parent = get_parent().parent
 	if parent:
 		speed = parent.speed
 

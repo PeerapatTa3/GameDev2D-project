@@ -4,7 +4,5 @@ extends State
 
 func enter():
 	parent.attacking = true
-
-func update(delta):
-	if !parent.attacking:
-		Transitioned.emit(self, "idle")
+	await get_tree().create_timer(0.5).timeout
+	Transitioned.emit(self, "idle")

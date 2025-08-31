@@ -1,9 +1,6 @@
-extends Node
+extends CanvasLayer
+class_name GameManager
 
-var player
-var playerHP
-var coin
-
-func _ready() -> void:
-	player = get_tree().get_first_node_in_group("Player")
-	player.get_node("HealthComponent")
+func _process(delta: float) -> void:
+	$Label.text = str(GameStat.playerHP)
+	$Label2.text = str(GameStat.coin)
