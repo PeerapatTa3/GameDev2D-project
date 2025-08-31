@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://hcbw0fopbrsl"]
+[gd_scene load_steps=28 format=3 uid="uid://hcbw0fopbrsl"]
 
 [ext_resource type="Script" uid="uid://cd5dv5l4x0rc6" path="res://Scene/GameCharacter/player_v_2.gd" id="1_dnti4"]
 [ext_resource type="Texture2D" uid="uid://cy3q48eioloxa" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Human/Walk.png" id="2_5bx0p"]
@@ -7,9 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://dibi7luv2xcet" path="res://Components/hitbox_component.tscn" id="4_mtpmn"]
 [ext_resource type="Texture2D" uid="uid://bmjoajd7i2dnj" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Human/Attack.png" id="5_nnop2"]
 [ext_resource type="Script" uid="uid://htwmnyh8dbf2" path="res://Scene/GameCharacter/player_anim_tree.gd" id="7_3mhyy"]
-[ext_resource type="PackedScene" uid="uid://d1eeytly066wh" path="res://Components/move_component.tscn" id="7_5bx0p"]
+[ext_resource type="PackedScene" uid="uid://dxa6vunbswyu5" path="res://States/state_machine.tscn" id="7_gwmxx"]
 [ext_resource type="AnimationNodeStateMachine" uid="uid://dwf1q4yaa3r84" path="res://animation/player_state.tres" id="7_nnop2"]
-[ext_resource type="PackedScene" uid="uid://dqfawk6idljce" path="res://Components/player_controller.tscn" id="8_d3ur8"]
+[ext_resource type="Script" uid="uid://bfqjixql3y8pv" path="res://Scene/GameCharacter/PlayerIdle.gd" id="8_aplj8"]
+[ext_resource type="Script" uid="uid://c0ioasys5c4d1" path="res://Scene/GameCharacter/PlayerWalk.gd" id="9_0c5hs"]
+[ext_resource type="Script" uid="uid://bv1d8ched3qko" path="res://Scene/GameCharacter/PlayerAttack.gd" id="10_0c5hs"]
+[ext_resource type="Script" uid="uid://b0gj3nl683f8h" path="res://States/KnockbackState.gd" id="11_o52fj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5bx0p"]
 size = Vector2(6.875, 4.75)
@@ -446,6 +449,7 @@ _data = {
 
 [node name="PlayerV2" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_dnti4")
+speed = 400
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_5bx0p")
@@ -478,9 +482,9 @@ hframes = 4
 vframes = 4
 frame = 4
 
-[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "Movecomponent") instance=ExtResource("4_b1ikc")]
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "state") instance=ExtResource("4_b1ikc")]
 Healthcomponent = NodePath("../HealthComponent")
-Movecomponent = NodePath("../MoveComponent")
+state = NodePath("../State Machine")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
 position = Vector2(0.5, -0.5)
@@ -491,11 +495,23 @@ debug_color = Color(0.998188, 0, 0.148357, 0.42)
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_mtpmn")
 
-[node name="MoveComponent" parent="." node_paths=PackedStringArray("move_style") instance=ExtResource("7_5bx0p")]
-move_style = NodePath("PlayerController")
-speed = 400
+[node name="State Machine" parent="." node_paths=PackedStringArray("initial_state") instance=ExtResource("7_gwmxx")]
+initial_state = NodePath("Idle")
 
-[node name="PlayerController" parent="MoveComponent" instance=ExtResource("8_d3ur8")]
+[node name="Idle" type="Node" parent="State Machine"]
+script = ExtResource("8_aplj8")
+
+[node name="Walk" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
+script = ExtResource("9_0c5hs")
+parent = NodePath("../..")
+
+[node name="Attack" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
+script = ExtResource("10_0c5hs")
+parent = NodePath("../..")
+
+[node name="Knockback" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
+script = ExtResource("11_o52fj")
+parent = NodePath("../..")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

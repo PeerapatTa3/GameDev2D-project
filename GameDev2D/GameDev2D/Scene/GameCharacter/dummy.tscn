@@ -217,6 +217,22 @@ collision_layer = 2
 script = ExtResource("1_0tr3b")
 speed = 400
 
+[node name="State Machine" parent="." node_paths=PackedStringArray("initial_state") instance=ExtResource("8_ro3g2")]
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfind")]
+script = ExtResource("9_8tufu")
+pathfind = NodePath("../../PathFindingComponent")
+
+[node name="Chase" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfinder", "parent")]
+script = ExtResource("9_xbwto")
+pathfinder = NodePath("../../PathFindingComponent")
+parent = NodePath("../..")
+
+[node name="Knockback" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
+script = ExtResource("9_ro3g2")
+parent = NodePath("../..")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_m5pqv")
 hframes = 4
@@ -226,10 +242,10 @@ vframes = 4
 position = Vector2(-14, -22)
 MAX_HP = 50
 
-[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "Movecomponent") instance=ExtResource("3_bx1em")]
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "state") instance=ExtResource("3_bx1em")]
 collision_layer = 2
 Healthcomponent = NodePath("../HealthComponent")
-Movecomponent = NodePath("../State Machine/Knock")
+state = NodePath("../State Machine")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
 position = Vector2(-0.5, -0.5)
@@ -250,22 +266,6 @@ debug_color = Color(4.18738e-06, 0.630373, 0.473188, 0.42)
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_0tr3b")
 
-[node name="State Machine" parent="." node_paths=PackedStringArray("initial_state") instance=ExtResource("8_ro3g2")]
-initial_state = NodePath("Idle")
-
-[node name="Idle" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfind")]
-script = ExtResource("9_8tufu")
-pathfind = NodePath("../../PathFindingComponent")
-
-[node name="Chase" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfinder", "parent")]
-script = ExtResource("9_xbwto")
-pathfinder = NodePath("../../PathFindingComponent")
-parent = NodePath("../..")
-
-[node name="Knock" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
-script = ExtResource("9_ro3g2")
-parent = NodePath("../..")
-
 [node name="PathFindingComponent" parent="." instance=ExtResource("7_0tr3b")]
 detection_length = 70
 
@@ -281,5 +281,3 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(-0.00187266, 0.956044)
 parameters/walk/blend_position = Vector2(0, 1)
 script = ExtResource("8_m5pqv")
-
-[connection signal="hurt" from="HurtboxComponent" to="HurtboxComponent" method="_on_hurt"]

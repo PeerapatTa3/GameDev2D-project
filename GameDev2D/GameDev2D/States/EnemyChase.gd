@@ -16,5 +16,6 @@ func physic_update(delta):
 		parent.velocity = velocity
 		parent.move_and_slide()
 	else :
+		parent.velocity = Vector2.ZERO
 		Transitioned.emit(self, "idle")
 	

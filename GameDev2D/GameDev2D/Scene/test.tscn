@@ -13,14 +13,9 @@ scale = Vector2(6, 6)
 [node name="PlayerV2" parent="." instance=ExtResource("2_vrsyt")]
 position = Vector2(32.3333, 99.6667)
 
-[node name="Dummy" parent="." node_paths=PackedStringArray("goal") instance=ExtResource("3_vrsyt")]
-position = Vector2(223.333, 72.8333)
-goal = NodePath("../PlayerV2")
-
-[node name="Dummy2" parent="." node_paths=PackedStringArray("goal") instance=ExtResource("3_vrsyt")]
-position = Vector2(223, 34)
-goal = NodePath("../PlayerV2")
-
 [node name="DamagePotion" parent="." instance=ExtResource("4_asc4v")]
 position = Vector2(96.8333, 68.6667)
 scale = Vector2(0.5, 0.5)
+
+[node name="Dummy" parent="." instance=ExtResource("3_vrsyt")]
+position = Vector2(282.5, 60.6667)
