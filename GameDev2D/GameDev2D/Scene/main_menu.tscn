@@ -1,0 +1,135 @@
+[gd_scene load_steps=11 format=3 uid="uid://cubqybsmngna0"]
+
+[ext_resource type="Texture2D" uid="uid://byv3q3sihhu4v" path="res://Image/Ui/preview.webp" id="1_87ipw"]
+[ext_resource type="Script" uid="uid://cxejc5mg2pv8q" path="res://main_menu.gd" id="1_hii65"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_hii65"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
+texture = ExtResource("1_87ipw")
+modulate_color = Color(0.466181, 0.466181, 0.466181, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87ipw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqsxi"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvidh"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87ipw"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hii65"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hii65")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1283.0
+offset_bottom = 803.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jix8l")
+
+[node name="Button_Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.5
+offset_top = -37.5
+offset_right = 122.5
+offset_bottom = 37.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hii65")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_87ipw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kqsxi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pvidh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
+text = "Start"
+
+[node name="Button_Exit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.664
+anchor_right = 0.5
+anchor_bottom = 0.664
+offset_left = -122.0
+offset_top = -37.2
+offset_right = 123.0
+offset_bottom = 37.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hii65")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_87ipw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_87ipw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hii65")
+theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.502
+anchor_top = 0.291
+anchor_right = 0.502
+anchor_bottom = 0.291
+offset_left = -96.5601
+offset_top = -61.8
+offset_right = 96.4399
+offset_bottom = 61.2
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_hii65")
+theme_override_font_sizes/font_size = 100
+text = "Sox kee maa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Button_Exit" to="." method="_on_button_exit_pressed"]
