@@ -13,6 +13,7 @@ func _ready() -> void:
 	if initial_state:
 		initial_state.enter()
 		current_state = initial_state
+		$Label.text = current_state.name
 
 func _process(delta: float) -> void:
 	if current_state:
@@ -35,3 +36,4 @@ func on_child_transition(state, new_state_name):
 	
 	new_state.enter()
 	current_state = new_state
+	$Label.text = current_state.name

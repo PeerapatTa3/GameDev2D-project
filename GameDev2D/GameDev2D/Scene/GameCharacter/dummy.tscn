@@ -1,13 +1,16 @@
-[gd_scene load_steps=34 format=3 uid="uid://doeagxnlrd8l0"]
+[gd_scene load_steps=38 format=3 uid="uid://doeagxnlrd8l0"]
 
 [ext_resource type="Script" uid="uid://d240gc6gpj7l0" path="res://Scene/GameCharacter/dummy.gd" id="1_0tr3b"]
 [ext_resource type="Texture2D" uid="uid://c8crltw6dslvi" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/Walk.png" id="2_m5pqv"]
 [ext_resource type="PackedScene" uid="uid://clb1jf3m4iu1k" path="res://Components/health_component.tscn" id="2_qyg6o"]
 [ext_resource type="PackedScene" uid="uid://bkj7vpx3aeyi1" path="res://Components/hurtbox_component.tscn" id="3_bx1em"]
-[ext_resource type="PackedScene" uid="uid://d1eeytly066wh" path="res://Components/move_component.tscn" id="4_qyg6o"]
 [ext_resource type="PackedScene" uid="uid://dibi7luv2xcet" path="res://Components/hitbox_component.tscn" id="5_bx1em"]
 [ext_resource type="PackedScene" uid="uid://cfgxfnjkukxig" path="res://Components/path_finding_component.tscn" id="7_0tr3b"]
 [ext_resource type="Script" uid="uid://dm51gfx6yytlo" path="res://Scene/GameCharacter/animation_tree.gd" id="8_m5pqv"]
+[ext_resource type="PackedScene" uid="uid://dxa6vunbswyu5" path="res://States/state_machine.tscn" id="8_ro3g2"]
+[ext_resource type="Script" uid="uid://d2h7hhco358dq" path="res://States/EnemyIdle.gd" id="9_8tufu"]
+[ext_resource type="Script" uid="uid://b0gj3nl683f8h" path="res://States/KnockbackState.gd" id="9_ro3g2"]
+[ext_resource type="Script" uid="uid://y0lq46n522g3" path="res://States/EnemyChase.gd" id="9_xbwto"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4ws0"]
 size = Vector2(5, 7)
@@ -32,6 +35,10 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
+
+[sub_resource type="Animation" id="Animation_0r81t"]
+resource_name = "die"
+step = 0.1
 
 [sub_resource type="Animation" id="Animation_u40al"]
 resource_name = "idle_left"
@@ -133,6 +140,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jv61a"]
 _data = {
 &"RESET": SubResource("Animation_ro3g2"),
+&"die": SubResource("Animation_0r81t"),
 &"idle_left": SubResource("Animation_u40al"),
 &"idle_right": SubResource("Animation_m5pqv"),
 &"idle_up": SubResource("Animation_jv61a"),
@@ -207,6 +215,7 @@ transitions = ["Start", "walk", SubResource("AnimationNodeStateMachineTransition
 [node name="Dummy" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_0tr3b")
+speed = 400
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_m5pqv")
@@ -220,7 +229,7 @@ MAX_HP = 50
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "Movecomponent") instance=ExtResource("3_bx1em")]
 collision_layer = 2
 Healthcomponent = NodePath("../HealthComponent")
-Movecomponent = NodePath("../MoveComponent")
+Movecomponent = NodePath("../State Machine/Knock")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
 position = Vector2(-0.5, -0.5)
@@ -241,9 +250,21 @@ debug_color = Color(4.18738e-06, 0.630373, 0.473188, 0.42)
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_0tr3b")
 
-[node name="MoveComponent" parent="." node_paths=PackedStringArray("move_style") instance=ExtResource("4_qyg6o")]
-move_style = NodePath("../PathFindingComponent")
-speed = 200
+[node name="State Machine" parent="." node_paths=PackedStringArray("initial_state") instance=ExtResource("8_ro3g2")]
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfind")]
+script = ExtResource("9_8tufu")
+pathfind = NodePath("../../PathFindingComponent")
+
+[node name="Chase" type="Node" parent="State Machine" node_paths=PackedStringArray("pathfinder", "parent")]
+script = ExtResource("9_xbwto")
+pathfinder = NodePath("../../PathFindingComponent")
+parent = NodePath("../..")
+
+[node name="Knock" type="Node" parent="State Machine" node_paths=PackedStringArray("parent")]
+script = ExtResource("9_ro3g2")
+parent = NodePath("../..")
 
 [node name="PathFindingComponent" parent="." instance=ExtResource("7_0tr3b")]
 detection_length = 70

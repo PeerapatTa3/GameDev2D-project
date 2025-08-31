@@ -1,4 +1,5 @@
 extends Node2D
+class_name PathFindingComponent
 
 @export var timer : float
 @export var detection_length : int
@@ -13,7 +14,7 @@ var dir
 func _ready() -> void:
 	$NavigationAgent2D/Timer.start()
 
-func _process(delta):
+func _physics_process(delta: float) -> void:
 	if !player:
 		return
 	

@@ -4,7 +4,7 @@ class_name HurtboxComponent
 signal hurt
 
 @export var Healthcomponent : HealthComponent
-@export var Movecomponent : MoveComponent
+@export var Movecomponent : Node
 @export var Iframe : float = 0
 
 var attackable : bool = true
