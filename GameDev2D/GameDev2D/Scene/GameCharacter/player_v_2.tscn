@@ -14,7 +14,7 @@
 [ext_resource type="Script" path="res://Scene/GameCharacter/PlayerWalk.gd" id="9_0c5hs"]
 [ext_resource type="Script" path="res://Scene/GameCharacter/PlayerAttack.gd" id="10_0c5hs"]
 [ext_resource type="Script" uid="uid://b0gj3nl683f8h" path="res://States/KnockbackState.gd" id="11_o52fj"]
-[ext_resource type="Script" path="res://Scene/GameCharacter/PlayerDead.gd" id="13_48qvh"]
+[ext_resource type="Script" uid="uid://ciyrfil3v7rpy" path="res://Scene/GameCharacter/PlayerDead.gd" id="13_48qvh"]
 [ext_resource type="Script" path="res://Scene/GameCharacter/label.gd" id="16_48qvh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5bx0p"]

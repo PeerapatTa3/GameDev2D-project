@@ -17,3 +17,6 @@ res://game_manager.gd
 res://health_component.gd
 res://Scene/GameCharacter/player_v_2.gd
 res://main_menu.gd
+res://gameover.gd
+res://gameover.tscn
+res://Scene/GameCharacter/PlayerDead.gd

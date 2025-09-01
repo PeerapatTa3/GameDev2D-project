@@ -16,4 +16,4 @@ func _process(delta: float) -> void:
 		player = GameStat.player
 	$ProgressBar.value = playerHP*100/playerMaxHP
 	$Label.text = str(playerHP)
-	$Label2.text = str(":","\t",+GameStat.coin)
+	$Label2.text = str(": ",+GameStat.coin)
