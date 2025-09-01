@@ -1,6 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://dblidhlvytmce"]
+[gd_scene load_steps=3 format=3 uid="uid://dblidhlvytmce"]
 
 [ext_resource type="Script" uid="uid://ca10ix5ripsky" path="res://game_manager.gd" id="1_x3ly4"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_a23hh"]
 
-[node name="GameManager" type="Node"]
+[node name="GameManager" type="CanvasLayer"]
 script = ExtResource("1_x3ly4")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 52.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("2_a23hh")
+theme_override_font_sizes/font_size = 32
+text = "playerHp"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 34.0
+offset_right = 45.0
+offset_bottom = 83.0
+text = "coin
+"

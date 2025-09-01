@@ -12,3 +12,4 @@ func _physics_process(_delta: float) -> void:
 	
 	set("parameters/walk/blend_position", last_faced_dir)
 	set("parameters/idle/blend_position", last_faced_dir)
+	set("parameters/attack/blend_position", last_faced_dir)

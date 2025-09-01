@@ -1,3 +1,6 @@
-extends Node
+extends CanvasLayer
+class_name GameManager
 
-@onready var Player = $"../Player"
+func _process(delta: float) -> void:
+	$Label.text = str(GameStat.playerHP)
+	$Label2.text = str(GameStat.coin)

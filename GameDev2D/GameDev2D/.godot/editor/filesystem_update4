@@ -11,3 +11,10 @@ res://Components/health_component.tscn
 res://Scene/main_menu.tscn
 res://current_main.tscn
 res://map.tscn
+res://health_component.gd
+res://hitbox_component.gd
+res://hurtbox_component.gd
+res://Components/path_finding_component.gd
+res://Scene/GameCharacter/animation_tree.gd
+res://Scene/GameCharacter/dummy.gd
+res://Scene/GameCharacter/player_v_2.gd

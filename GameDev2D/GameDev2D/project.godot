@@ -15,10 +15,27 @@ run/main_scene="uid://cubqybsmngna0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameStat="*res://Script/GameStat.gd"
+
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=800
+
+[file_customization]
+
+folder_colors={
+"res://Components/": "yellow",
+"res://Font/": "green",
+"res://Image/": "blue",
+"res://Scene/": "purple",
+"res://Scene/Items/": "purple",
+"res://Script/": "pink",
+"res://States/": "teal",
+"res://animation/": "orange"
+}
 
 [input]
 
