@@ -2,6 +2,7 @@ extends Control
 
 
 func _ready() -> void:
+	AudioManager.gameover.play()
 	$Label2.text = str("Score : ",+GameStat.coin)
 
 

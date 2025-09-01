@@ -1,3 +1,6 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
+Node
 GPUParticles2D
 CPUParticles2D
 TextureRect
@@ -6,10 +9,6 @@ Button
 Label
 Control
 ProgressBar
-AudioStreamPlayer2D
 TileMapLayer
 Node2D
 VBoxContainer
-Sprite2D
-CollisionShape2D
-Area2D

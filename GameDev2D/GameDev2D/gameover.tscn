@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://buc4xwtqroeec"]
 
-[ext_resource type="Script" uid="uid://bv3m8a34dhaj1" path="res://gameover.gd" id="1_4nh4k"]
+[ext_resource type="Script" uid="uid://bv3m8a34dhaj1" path="res://Script/gameover.gd" id="1_4nh4k"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_tpdqf"]
 [ext_resource type="Texture2D" uid="uid://b8n7utu8ra13b" path="res://Image/coin/skull.png" id="3_eeur3"]
 

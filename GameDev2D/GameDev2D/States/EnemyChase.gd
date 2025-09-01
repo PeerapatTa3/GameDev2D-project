@@ -3,6 +3,7 @@ extends State
 @onready var player = get_tree().get_first_node_in_group("Player")
 @export var pathfinder : PathFindingComponent
 var parent
+var one = 1
 
 var speed
 var velocity = Vector2.ZERO
@@ -10,6 +11,9 @@ var velocity = Vector2.ZERO
 func enter() -> void:
 	parent = get_parent().parent
 	if parent:
+		if one == 1:
+			AudioManager.sfx_monster.play()
+			one +=1
 		speed = parent.speed
 
 func physic_update(delta):

@@ -2,6 +2,7 @@ extends State
 class_name KnockbackState
 
 var parent
+@export var sfx_hurt : AudioStreamPlayer
 
 var knockback_strength : float = 0
 var knockback_duration : float = 0
@@ -32,6 +33,8 @@ func update(delta):
 		Transitioned.emit(self, "dead")
 
 func apply_knockback(attack : Attack):
+	if sfx_hurt:
+		sfx_hurt.play()
 	knockback_duration = attack.knockback_timer
 	knockback_strength = attack.knockback_strength
 	knockback_positon = attack.attack_position

@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func _on_button_start_pressed() -> void:
 	get_tree().change_scene_to_packed(scene)
-	#get_tree().change_scene_to_file("res://current_main.tscn")
+	AudioManager.bg_1.play()
 	$bg.stop()
 
 

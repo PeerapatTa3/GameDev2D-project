@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c75rshup4a8xe"
-path="res://.godot/imported/Mockup.png-b147754ef0196077e50e32be32e9ea42.ctex"
+uid="uid://dwqmqhrlym5kh"
+path="res://.godot/imported/Prop_Shadows.png-8368b343f0d720730518beef62d75e7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Image/Minifantasy_Dungeon_Assets/Mockup.png"
-dest_files=["res://.godot/imported/Mockup.png-b147754ef0196077e50e32be32e9ea42.ctex"]
+source_file="res://Image/Minifantasy_Dungeon_Assets/Props/Animated_Props/Prop_Shadows.png"
+dest_files=["res://.godot/imported/Prop_Shadows.png-8368b343f0d720730518beef62d75e7b.ctex"]
 
 [params]
 
