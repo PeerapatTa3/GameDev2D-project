@@ -1,6 +1,7 @@
 extends Area2D
 class_name HurtboxComponent
 
+@export var Deathparticle : GPUParticles2D
 @export var Healthcomponent : HealthComponent
 @export var state : StateMachine
 @export var Iframe : float = 0
@@ -26,6 +27,8 @@ func _handle_state(attack : Attack):
 
 func _on_hurt() -> void:
 	if attackable:
+		if Deathparticle:
+			Deathparticle.emitting = true
 		attackable = !attackable
 		await get_tree().create_timer(Iframe).timeout
 		attackable = !attackable

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cleksw0xqegby"]
+
+[sub_resource type="Gradient" id="Gradient_dlw5w"]
+offsets = PackedFloat32Array(0.506849, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_drk02"]
+gradient = SubResource("Gradient_dlw5w")
+width = 2048
+
+[sub_resource type="Curve" id="Curve_c73c5"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hdnfr"]
+curve = SubResource("Curve_c73c5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nqau4"]
+lifetime_randomness = 0.5
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 0.5
+initial_velocity_max = 500.0
+gravity = Vector3(0, 0, 0)
+scale_max = 20.0
+scale_curve = SubResource("CurveTexture_hdnfr")
+color_ramp = SubResource("GradientTexture1D_drk02")
+
+[node name="DeathParticles" type="GPUParticles2D"]
+self_modulate = Color(0.481273, 1.09497e-06, 2.40654e-07, 1)
+position = Vector2(130, 96)
+emitting = false
+amount = 50
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_nqau4")

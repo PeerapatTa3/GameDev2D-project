@@ -20,3 +20,5 @@ res://main_menu.gd
 res://gameover.gd
 res://gameover.tscn
 res://Scene/GameCharacter/PlayerDead.gd
+res://hurtbox_component.gd
+res://death_particles.tscn
