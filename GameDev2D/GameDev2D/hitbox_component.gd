@@ -11,5 +11,5 @@ func _on_area_entered(area: Area2D) -> void:
 		attack.attack_damage = attack_damage
 		attack.knockback_strength = knockback_strength
 		attack.knockback_timer = knockback_duration
-		attack.attack_position = global_position
+		attack.attack_position = $CollisionShape2D.global_position
 		area.damage(attack)

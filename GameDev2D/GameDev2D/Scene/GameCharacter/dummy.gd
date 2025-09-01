@@ -4,3 +4,4 @@ extends CharacterBody2D
 @export var speed : int
 
 var isdead : bool = false
+var attacking : bool = false

@@ -27,3 +27,7 @@ res://hurtbox_component.gd
 res://Scene/GameCharacter/PlayerDead.gd
 res://game_manager.gd
 res://Script/GameStat.gd
+res://Scene/GameCharacter/animation_tree.gd
+res://Scene/GameCharacter/dummy.gd
+res://Scene/GameCharacter/EnemyAttack.gd
+res://hitbox_component.gd

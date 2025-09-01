@@ -532,10 +532,9 @@ vframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="HealthComponent" parent="." node_paths=PackedStringArray("state") instance=ExtResource("2_ifqjg")]
+[node name="HealthComponent" parent="." instance=ExtResource("2_ifqjg")]
 position = Vector2(-22, -34)
 MAX_HP = 50
-state = NodePath("../State Machine")
 
 [node name="HitboxComponent" parent="." instance=ExtResource("4_mtpmn")]
 collision_mask = 2
