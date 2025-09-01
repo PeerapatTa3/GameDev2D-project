@@ -1,13 +1,13 @@
-res://Scene/main_menu.tscn
+res://Scene/GameCharacter/player_v_2.tscn
 res://animation/player_idle.tres
 res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
-res://main_menu.gd
-res://Scene/GameCharacter/player_v_2.tscn
 res://Components/hurtbox_component.tscn
 res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Scene/GameCharacter/dummy.tscn
 res://Components/health_component.tscn
+res://Scene/main_menu.tscn
 res://current_main.tscn
+res://map.tscn
