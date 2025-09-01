@@ -5,7 +5,7 @@ var playerHP : float = 0
 var coin : int = 0
 
 func _ready() -> void:
-	#playerHP = player.get_node("HealthComponent").HP
+	#playerHP = HealthComponent
 	pass
 
 func _process(delta: float) -> void:

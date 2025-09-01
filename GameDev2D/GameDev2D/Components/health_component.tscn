@@ -4,9 +4,11 @@
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_kooan"]
 
 [node name="HealthComponent" type="Node2D"]
+scale = Vector2(0.25, 0.25)
 script = ExtResource("1_c2t11")
 
 [node name="HP_Label" type="Label" parent="."]
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("2_kooan")

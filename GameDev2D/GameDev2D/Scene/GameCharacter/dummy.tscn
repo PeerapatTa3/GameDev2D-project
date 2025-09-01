@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://doeagxnlrd8l0"]
+[gd_scene load_steps=60 format=3 uid="uid://doeagxnlrd8l0"]
 
 [ext_resource type="Script" uid="uid://d240gc6gpj7l0" path="res://Scene/GameCharacter/dummy.gd" id="1_0tr3b"]
 [ext_resource type="Texture2D" uid="uid://c8crltw6dslvi" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/Walk.png" id="2_m5pqv"]
@@ -6,16 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://366ir6b54b0o" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/Attack.png" id="3_0r81t"]
 [ext_resource type="PackedScene" uid="uid://bkj7vpx3aeyi1" path="res://Components/hurtbox_component.tscn" id="3_bx1em"]
 [ext_resource type="PackedScene" uid="uid://dibi7luv2xcet" path="res://Components/hitbox_component.tscn" id="5_bx1em"]
-[ext_resource type="Script" uid="uid://dt8nj4a7rxyxf" path="res://Scene/GameCharacter/EnemyDead.gd" id="6_8tufu"]
+[ext_resource type="Script" path="res://Scene/GameCharacter/EnemyDead.gd" id="6_8tufu"]
 [ext_resource type="PackedScene" uid="uid://cfgxfnjkukxig" path="res://Components/path_finding_component.tscn" id="7_0tr3b"]
 [ext_resource type="Script" uid="uid://dm51gfx6yytlo" path="res://Scene/GameCharacter/animation_tree.gd" id="8_m5pqv"]
 [ext_resource type="PackedScene" uid="uid://dxa6vunbswyu5" path="res://States/state_machine.tscn" id="8_ro3g2"]
 [ext_resource type="Script" uid="uid://d2h7hhco358dq" path="res://States/EnemyIdle.gd" id="9_8tufu"]
 [ext_resource type="Script" uid="uid://b0gj3nl683f8h" path="res://States/KnockbackState.gd" id="9_ro3g2"]
 [ext_resource type="Script" uid="uid://y0lq46n522g3" path="res://States/EnemyChase.gd" id="9_xbwto"]
-[ext_resource type="Script" uid="uid://b7rl07bleo1o5" path="res://Scene/GameCharacter/EnemyAttack.gd" id="10_mvojw"]
+[ext_resource type="Script" path="res://Scene/GameCharacter/EnemyAttack.gd" id="10_mvojw"]
+[ext_resource type="PackedScene" uid="uid://dv4igbv86v8ni" path="res://Components/h_pbar.tscn" id="12_d1rxx"]
 [ext_resource type="Texture2D" uid="uid://cfk1mfrfmrpbc" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/Die.png" id="13_bw38l"]
-[ext_resource type="Script" uid="uid://dr6b4lrx5aytv" path="res://Scene/GameCharacter/label.gd" id="14_jv61a"]
+[ext_resource type="Script" path="res://Scene/GameCharacter/label.gd" id="14_jv61a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4ws0"]
 size = Vector2(5, 7)
@@ -644,9 +645,16 @@ script = ExtResource("6_8tufu")
 [node name="attack" type="Node" parent="State Machine"]
 script = ExtResource("10_mvojw")
 
-[node name="HealthComponent" parent="." instance=ExtResource("2_qyg6o")]
+[node name="HealthComponent" parent="." node_paths=PackedStringArray("HP_Bar") instance=ExtResource("2_qyg6o")]
 position = Vector2(-14, -22)
-MAX_HP = 50
+MAX_HP = 100
+HP_Bar = NodePath("HPbar")
+
+[node name="HPbar" parent="HealthComponent" instance=ExtResource("12_d1rxx")]
+offset_left = -52.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 59.0
 
 [node name="HurtboxComponent" parent="." node_paths=PackedStringArray("Healthcomponent", "state") instance=ExtResource("3_bx1em")]
 collision_layer = 2

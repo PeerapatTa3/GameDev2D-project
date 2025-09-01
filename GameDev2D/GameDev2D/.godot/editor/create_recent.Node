@@ -1,8 +1,9 @@
+ProgressBar
+TextureRect
 AudioStreamPlayer2D
 TileMapLayer
 Node2D
 Panel
-TextureRect
 Label
 VBoxContainer
 Button
@@ -11,5 +12,3 @@ CollisionShape2D
 Area2D
 StaticBody2D
 RayCast2D
-AnimationTree
-AnimationPlayer

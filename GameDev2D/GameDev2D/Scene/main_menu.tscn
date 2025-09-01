@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://cubqybsmngna0"]
+[gd_scene load_steps=13 format=3 uid="uid://cubqybsmngna0"]
 
 [ext_resource type="Texture2D" uid="uid://byv3q3sihhu4v" path="res://Image/Ui/preview.webp" id="1_87ipw"]
 [ext_resource type="Script" uid="uid://cxejc5mg2pv8q" path="res://main_menu.gd" id="1_hii65"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_hii65"]
+[ext_resource type="PackedScene" uid="uid://7bvg36scei8o" path="res://current_main.tscn" id="2_pvidh"]
 [ext_resource type="AudioStream" uid="uid://6p78qcxmb557" path="res://sound/adventure-game-262423.mp3" id="4_kqsxi"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
@@ -54,6 +55,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hii65")
+scene = ExtResource("2_pvidh")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0

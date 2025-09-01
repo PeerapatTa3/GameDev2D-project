@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv4igbv86v8ni"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kooan"]
+bg_color = Color(0.0509804, 0.717647, 0.313726, 1)
+
+[node name="HPbar" type="ProgressBar"]
+offset_right = 224.0
+offset_bottom = 27.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_kooan")
