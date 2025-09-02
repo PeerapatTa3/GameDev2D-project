@@ -18,8 +18,12 @@
 v1.0 [https://peerapatta3.github.io/GameDev2D-project/](https://peerapatta3.github.io/GameDev2D-project/)
 
 # Screenshots
-<img width="1281" height="798" alt="image" src="https://github.com/user-attachments/assets/ef0863d7-922f-4ef1-b629-2b32687fb137" />
-<img width="1287" height="806" alt="image" src="https://github.com/user-attachments/assets/5ac75fe2-f219-4d0d-bff1-9d624a839849" />
+<img width="641" height="399" alt="image" src="https://github.com/user-attachments/assets/ef0863d7-922f-4ef1-b629-2b32687fb137" />
+<img width="644" height="403" alt="image" src="https://github.com/user-attachments/assets/5ac75fe2-f219-4d0d-bff1-9d624a839849" />
+<img width="960" height="461" alt="image" src="https://github.com/user-attachments/assets/b9a83944-68e8-44c7-9a6a-8455232c2b08" />
+<img width="960" height="456" alt="image" src="https://github.com/user-attachments/assets/eecbbad5-c441-489c-9c40-43ae60cf1843" />
+
+
 
 # Characters
 Player  
