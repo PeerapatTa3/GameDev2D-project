@@ -24,6 +24,7 @@ AudioManager="*res://audio_manager/audio_manager.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=800
+window/stretch/aspect="expand"
 
 [file_customization]
 
