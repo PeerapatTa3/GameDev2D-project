@@ -15,7 +15,7 @@
  
 # Play
 
-v1.0 [https://peerapatta3.github.io/GameDev2D-project/](https://krishna-palacio.itch.io/minifantasy-dungeon)
+v1.0 [https://peerapatta3.github.io/GameDev2D-project/](https://peerapatta3.github.io/GameDev2D-project/)
 
 # Screenshots
 <img width="1281" height="798" alt="image" src="https://github.com/user-attachments/assets/ef0863d7-922f-4ef1-b629-2b32687fb137" />
