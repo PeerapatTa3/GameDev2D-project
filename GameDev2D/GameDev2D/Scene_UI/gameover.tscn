@@ -49,15 +49,15 @@ vertical_alignment = 1
 [node name="Node" type="Node" parent="."]
 
 [node name="Label2" type="Label" parent="Node"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 243.0
-offset_top = -27.0
-offset_right = 313.0
-offset_bottom = 3.0
+anchors_preset = -1
+anchor_left = 0.519
+anchor_top = 0.521
+anchor_right = 0.519
+anchor_bottom = 0.521
+offset_left = -35.3201
+offset_top = -14.8
+offset_right = 34.6799
+offset_bottom = 15.2
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -129,9 +129,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -121.0
-offset_top = 358.0
+offset_top = 376.0
 offset_right = 257.0
-offset_bottom = 790.0
+offset_bottom = 808.0
 grow_horizontal = 2
 scale = Vector2(0.186007, 0.180187)
 texture = ExtResource("4_lpmls")
