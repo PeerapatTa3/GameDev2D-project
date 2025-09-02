@@ -626,6 +626,7 @@ states/walk/position = Vector2(408, 79)
 transitions = ["Start", "walk", SubResource("AnimationNodeStateMachineTransition_p12y7"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_vrkgr"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_g38rh"), "idle", "dead", SubResource("AnimationNodeStateMachineTransition_0r81t"), "walk", "dead", SubResource("AnimationNodeStateMachineTransition_mvojw"), "attack", "dead", SubResource("AnimationNodeStateMachineTransition_y3fug"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_xt0mj"), "walk", "attack", SubResource("AnimationNodeStateMachineTransition_jht7x"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_di4cd")]
 
 [node name="Dummy" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_0tr3b")
@@ -699,7 +700,6 @@ shape = SubResource("RectangleShape2D_h4ws0")
 debug_color = Color(0.963774, 0.180563, 0.16243, 0.42)
 
 [node name="DeathParticles" parent="HurtboxComponent" instance=ExtResource("14_3yukj")]
-position = Vector2(18.5, 2)
 scale = Vector2(0.25, 0.25)
 
 [node name="HitboxComponent" parent="." instance=ExtResource("5_bx1em")]

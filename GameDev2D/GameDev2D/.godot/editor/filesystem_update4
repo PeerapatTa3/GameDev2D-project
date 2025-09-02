@@ -1,9 +1,10 @@
-res://Components/hurtbox_component.tscn
+res://map/map.tscn
 res://audio_manager/audio_manager.gd
 res://animation/player_idle.tres
 res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
+res://Components/hurtbox_component.tscn
 res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Components/health_component.tscn
@@ -15,13 +16,8 @@ res://Scene/GameCharacter/player_v_2.tscn
 res://Final_Main/current_main.tscn
 res://ของตกแต่งฉาก/torch.tscn
 res://audio_manager/audio_manager.tscn
-res://map/map.tscn
 res://Scene/Items/heal_potion.tscn
 res://Scene/test.tscn
 res://Components/dummy_v_2.tscn
 res://Scene/coin.tscn
 res://Scene/Items/door.tscn
-res://Scene_UI/gameover.gd
-res://Scene/Items/item.gd
-res://โค๊ดไรไม่รู้มาหาเอา/heal_potion.gd
-res://Scene/Items/coin.gd
