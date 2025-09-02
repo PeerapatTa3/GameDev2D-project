@@ -63,7 +63,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_kbi2q")
-expand_mode = 2
 
 [node name="Button_Start" type="Button" parent="."]
 anchors_preset = 8

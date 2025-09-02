@@ -4,7 +4,10 @@ extends CanvasLayer
 func _ready() -> void:
 	AudioManager.gameover.play()
 	$Node/Label2.text = str(GameStat.coin)
-	$Label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	$Node/Label2.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	$Node/Label2.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	$Node/Label2.size_flags_horizontal = Control.SIZE_FILL
+	$Node/Label2.size_flags_vertical = Control.SIZE_FILL
 
 
 func _on_button_retry_pressed() -> void:
