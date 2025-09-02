@@ -28,7 +28,7 @@ res://Scene/Manager/main.tscn::40ac2221c297e900e696b3f166a8875f::1756812841::res
 res://Scene/coin.tscn::9c57bb08994cb61e62ecd6eedbddb4ce::1756833760::res://.godot/exported/133200997/export-e11062fc039d432fd039eaadad0ffb94-coin.scn
 res://Scene/test.tscn::a90c8e75c5076b5e28199cfb5e4b2468::1756833760::res://.godot/exported/133200997/export-0be56f45ead8e77bf48322ac61cb00a7-test.scn
 res://Scene/test_ground.tscn::606e5b1ca665062aee044b6fb984cc84::1756654668::res://.godot/exported/133200997/export-081454a989211bca0017519cd9dfba3c-test_ground.scn
-res://Scene_UI/gameover.tscn::2d0ad928b80f46bbf5130c5877d8ecf9::1756834137::res://.godot/exported/133200997/export-27c896567e02d370489752ddfc3c68d5-gameover.scn
+res://Scene_UI/gameover.tscn::2a1b4bff59b1626c6a73e27514b1c6d1::1756834370::res://.godot/exported/133200997/export-27c896567e02d370489752ddfc3c68d5-gameover.scn
 res://Scene_UI/main_menu.tscn::43ddc5e6a224674e762ffb986a921c3f::1756833759::res://.godot/exported/133200997/export-33d48cf1644296c35fbf873a1b8335e2-main_menu.scn
 res://Scene_UI/win.tscn::b23c421c4362b631031b5cf6ff0cebb9::1756833759::res://.godot/exported/133200997/export-c61e972358b5fa62505d98d48458605d-win.scn
 res://Script/PlayerMovement.tscn::e9d4cd099c54e74891cd73dab5340409::1756563343::res://.godot/exported/133200997/export-2bb0bf1037661dd3ffe4cb0ccf0fe3a3-PlayerMovement.scn
