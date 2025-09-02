@@ -18,6 +18,7 @@ stream = ExtResource("1_jisk1")
 
 [node name="sfx_monster" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_6jj5d")
+volume_db = -10.0
 
 [node name="sfx_monster_death" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamMP3_6jj5d")

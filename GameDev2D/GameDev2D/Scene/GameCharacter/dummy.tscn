@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://dv4igbv86v8ni" path="res://Components/h_pbar.tscn" id="12_d1rxx"]
 [ext_resource type="Texture2D" uid="uid://cfk1mfrfmrpbc" path="res://Image/Minifantasy_Dungeon_Assets/Characters/Orc/Die.png" id="13_bw38l"]
 [ext_resource type="PackedScene" uid="uid://cleksw0xqegby" path="res://death_particles.tscn" id="14_3yukj"]
-[ext_resource type="Script" uid="uid://dr6b4lrx5aytv" path="res://Scene/GameCharacter/label.gd" id="14_jv61a"]
+[ext_resource type="Script" path="res://Scene/GameCharacter/label.gd" id="14_jv61a"]
 [ext_resource type="PackedScene" uid="uid://hofb4s2xsono" path="res://Components/player_detector.tscn" id="19_7ynny"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4ws0"]

@@ -11,4 +11,5 @@ func _on_button_retry_pressed() -> void:
 
 
 func _on_button_mainmenu_pressed() -> void:
+	AudioManager.bg_1.stop()
 	get_tree().change_scene_to_file("res://Scene/main_menu.tscn")

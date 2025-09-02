@@ -1,3 +1,5 @@
+CanvasLayer
+TextureRect
 CollisionShape2D
 PointLight2D
 AnimationPlayer
@@ -10,6 +12,4 @@ AudioStreamPlayer
 Node
 GPUParticles2D
 CPUParticles2D
-TextureRect
 Panel
-Button

@@ -7,4 +7,5 @@ func enter():
 	AudioManager.sfx_player_death.play()
 	await  get_tree().create_timer(2).timeout
 	get_tree().change_scene_to_file("res://gameover.tscn")
+	AudioManager.bg_1.stop()
 	AudioManager.gameover.play()

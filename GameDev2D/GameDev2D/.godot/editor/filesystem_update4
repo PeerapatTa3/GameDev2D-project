@@ -1,10 +1,9 @@
-res://current_main.tscn
+res://Components/hurtbox_component.tscn
 res://Script/audio_manager.gd
 res://animation/player_idle.tres
 res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
-res://Components/hurtbox_component.tscn
 res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Scene/GameCharacter/dummy.tscn
@@ -13,6 +12,10 @@ res://Scene/main_menu.tscn
 res://Scene/Manager/game_manager.tscn
 res://death_particles.tscn
 res://Scene/GameCharacter/player_v_2.tscn
+res://current_main.tscn
 res://gameover.tscn
-res://audio_manager.tscn
 res://torch.tscn
+res://audio_manager.tscn
+res://Script/gameover.gd
+res://Scene/GameCharacter/PlayerDead.gd
+res://States/KnockbackState.gd
