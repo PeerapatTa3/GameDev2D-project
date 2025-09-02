@@ -5,3 +5,4 @@ res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
 res://Scene_UI/gameover.gd
+res://Scene_UI/gameover.tscn

@@ -3,7 +3,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	AudioManager.gameover.play()
-	$Label2.text = str(":",+GameStat.coin)
+	$Node/Label2.text = str(GameStat.coin)
 	$Label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 
