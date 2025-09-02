@@ -15,7 +15,7 @@
  
 # Play
 
-v1.0 [https://peerapatta3.github.io/GameDev2D-project/](url)
+v1.0 [https://peerapatta3.github.io/GameDev2D-project/]([url](https://krishna-palacio.itch.io/minifantasy-dungeon))
 
 # Screenshots
 <img width="1281" height="798" alt="image" src="https://github.com/user-attachments/assets/ef0863d7-922f-4ef1-b629-2b32687fb137" />
@@ -31,5 +31,5 @@ Enemys
 
 # Credits
 
-Tileset [https://krishna-palacio.itch.io/minifantasy-dungeon](url)  
-Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](url)  
+Tileset [https://krishna-palacio.itch.io/minifantasy-dungeon]([url](https://krishna-palacio.itch.io/minifantasy-dungeon))  
+Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack]([url](https://krishna-palacio.itch.io/minifantasy-dungeon))  
