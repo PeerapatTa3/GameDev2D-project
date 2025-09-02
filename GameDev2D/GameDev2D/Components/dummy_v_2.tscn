@@ -329,6 +329,7 @@ _data = {
 size = Vector2(4, 6)
 
 [node name="dummyV2" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_5ywj0")
 speed = 300

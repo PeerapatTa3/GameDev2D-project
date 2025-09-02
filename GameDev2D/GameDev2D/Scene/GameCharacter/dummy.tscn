@@ -633,6 +633,7 @@ script = ExtResource("1_0tr3b")
 speed = 300
 
 [node name="Sprites" type="Node2D" parent="."]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprites"]
 texture = ExtResource("2_m5pqv")

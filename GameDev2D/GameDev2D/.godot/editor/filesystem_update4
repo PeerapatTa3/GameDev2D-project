@@ -1,4 +1,4 @@
-res://Scene_UI/gameover.tscn
+res://Final_Main/current_main.tscn
 res://audio_manager/audio_manager.gd
 res://animation/player_idle.tres
 res://animation/player_attack.tres
@@ -9,10 +9,10 @@ res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Components/health_component.tscn
 res://Scene_UI/main_menu.tscn
+res://Scene_UI/gameover.tscn
 res://Scene_UI/win.tscn
 res://Scene/GameCharacter/dummy.tscn
 res://Scene/GameCharacter/player_v_2.tscn
-res://Final_Main/current_main.tscn
 res://ของตกแต่งฉาก/torch.tscn
 res://audio_manager/audio_manager.tscn
 res://map/map.tscn
