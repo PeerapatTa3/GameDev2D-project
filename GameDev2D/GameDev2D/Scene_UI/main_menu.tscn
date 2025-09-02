@@ -46,24 +46,16 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[node name="Main_menu" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Main_menu" type="CanvasLayer"]
 script = ExtResource("1_kbi2q")
 scene = ExtResource("2_3oys7")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
 offset_right = 1283.0
 offset_bottom = 803.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jix8l")
 
 [node name="Button_Start" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -88,7 +80,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
 text = "Start"
 
 [node name="Button_Exit" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.664
@@ -113,7 +104,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
 text = "Exit"
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.502
 anchor_top = 0.291

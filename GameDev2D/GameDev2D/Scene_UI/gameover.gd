@@ -1,9 +1,10 @@
-extends Control
+extends CanvasLayer
 
 
 func _ready() -> void:
+	GameStat.coin = 0;
 	AudioManager.gameover.play()
-	$Label2.text = str("Coin : ",+GameStat.coin," /20")
+	$Label2.text = str("Coin : ",+GameStat.coin)
 
 
 func _on_button_retry_pressed() -> void:

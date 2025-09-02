@@ -1,8 +1,9 @@
-extends Control
+extends CanvasLayer
 
 @export var scene : PackedScene
 
 func _ready() -> void:
+	GameStat.coin = 0;
 	AudioManager.bg_2.play()
 
 func _on_button_start_pressed() -> void:

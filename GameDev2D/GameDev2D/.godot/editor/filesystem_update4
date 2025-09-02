@@ -4,6 +4,7 @@ res://animation/player_idle.tres
 res://animation/player_attack.tres
 res://animation/player_walk.tres
 res://animation/player_state.tres
+res://Scene_UI/main_menu.gd
 res://Components/player_controller.tscn
 res://Components/path_finding_component.tscn
 res://Components/health_component.tscn
@@ -21,3 +22,6 @@ res://Scene/test.tscn
 res://Components/dummy_v_2.tscn
 res://Scene/coin.tscn
 res://Scene/Items/door.tscn
+res://Scene_UI/gameover.gd
+res://Scene_UI/win.gd
+res://Scene/Manager/game_manager.tscn

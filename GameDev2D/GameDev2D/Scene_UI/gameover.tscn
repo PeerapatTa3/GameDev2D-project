@@ -30,23 +30,15 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[node name="Gameover" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Gameover" type="CanvasLayer"]
 script = ExtResource("1_vkykl")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
 offset_right = 1277.0
 offset_bottom = 798.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_af4fq")
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -62,7 +54,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-layout_mode = 0
 offset_left = 512.0
 offset_top = 405.0
 offset_right = 775.0
@@ -74,7 +65,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button_Retry" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -99,7 +89,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_w3x71")
 text = "Retry"
 
 [node name="Button_Mainmenu" type="Button" parent="."]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -124,7 +113,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_w3x71")
 text = "MainMenu"
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5

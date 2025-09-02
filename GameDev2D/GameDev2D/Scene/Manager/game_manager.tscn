@@ -34,7 +34,6 @@ offset_left = 1.0
 offset_top = 7.0
 offset_right = 297.0
 offset_bottom = 34.0
-theme_override_fonts/font = ExtResource("2_a23hh")
 theme_override_styles/fill = SubResource("StyleBoxFlat_a23hh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
