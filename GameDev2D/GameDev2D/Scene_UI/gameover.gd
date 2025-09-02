@@ -7,9 +7,10 @@ func _ready() -> void:
 
 
 func _on_button_retry_pressed() -> void:
-	get_tree().change_scene_to_file("res://current_main.tscn")
+	AudioManager.bg_1.play()
+	get_tree().change_scene_to_file("res://Final_Main/current_main.tscn")
 
 
 func _on_button_mainmenu_pressed() -> void:
 	AudioManager.bg_1.stop()
-	get_tree().change_scene_to_file("res://Scene/main_menu.tscn")
+	get_tree().change_scene_to_file("res://Scene_UI/main_menu.tscn")

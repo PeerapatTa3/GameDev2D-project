@@ -7,4 +7,5 @@ func _ready() -> void:
 
 func _on_button_mainmenu_pressed() -> void:
 	AudioManager.win.stop()
-	get_tree().change_scene_to_file("res://Scene/main_menu.tscn")
+	get_tree().change_scene_to_file("res://Scene_UI/main_menu.tscn")
+	
