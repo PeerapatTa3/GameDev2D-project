@@ -6,5 +6,5 @@
 
 # Credits
 
-Tileset https:[//krishna-palacio.itch.io/minifantasy-dungeon](url)
-Music 
+Tileset [https://krishna-palacio.itch.io/minifantasy-dungeon](url)
+Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](url)
