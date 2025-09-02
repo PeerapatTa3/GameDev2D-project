@@ -4,7 +4,12 @@
 673380287-8 นายพีรพล แก้วเจริญสันติสุข  
 673380288-6 นายพีรพัฒน์ แท่นประยุทธ  
 
+# เนื้อเรื่องย่อ
+
+	เด็กชายคนหนึ่งเขาตื่นขึ้นที่หน้าดันเจี้ยนแห่งหนึ่ง เขาพบว่าตัวเองนั้นติดอยู่ในดันเจี้ยนเขาวงกตแห่งนี้ ในมือของเขาได้มีคบไฟ ดาบและกระดาษใบหนึ่ง เขียนเอาไว้ว่า “ตามหาเหรียญทอง 20 เหรียญเพื่ออิสระของเจ้า” เมื่อเด็กหนุ่มเห็นเช่นนั้นเขาจึงได้ตัดสินใจต้องฟันฝ่าอุปสรรค และมอนเตอร์ต่างๆเข้าไปในดันเจี้ยนตามหาเหรียญทั้ง20เหรียญที่ซ่อนอยู่ในดันเจี้ยนแห่งนี้
+
+
 # Credits
 
-Tileset [https://krishna-palacio.itch.io/minifantasy-dungeon](url)
-Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](url)
+Tileset [https://krishna-palacio.itch.io/minifantasy-dungeon](url)  
+Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](url)  
