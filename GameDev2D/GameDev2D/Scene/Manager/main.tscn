@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://dl1vh246xfwqs"]
 
-[ext_resource type="Script" uid="uid://b4is27f3dxwj6" path="res://main.gd" id="1_jmavn"]
+[ext_resource type="Script" uid="uid://b4is27f3dxwj6" path="res://Scene/Manager/main.gd" id="1_jmavn"]
 [ext_resource type="Texture2D" uid="uid://cmv4fl2q7e5yi" path="res://Image/tileset/floor/Dungeon_Autotiles.png" id="2_ryvli"]
 [ext_resource type="Texture2D" uid="uid://b5l4tx1j44acr" path="res://Image/tileset/floor/Dungeon_WallsAndFloors.png" id="3_8tcba"]
 [ext_resource type="Texture2D" uid="uid://cfs1i6ewe04wp" path="res://Image/tileset/deco/DungeonDecorations.png" id="4_aunss"]

@@ -13,12 +13,12 @@ config_version=5
 config/name="TraineeBoy"
 run/main_scene="uid://cubqybsmngna0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://จักกะไฟล์ไร/icon.svg"
 
 [autoload]
 
 GameStat="*res://Script/GameStat.gd"
-AudioManager="*res://audio_manager.tscn"
+AudioManager="*res://audio_manager/audio_manager.tscn"
 
 [display]
 
@@ -29,6 +29,7 @@ window/size/viewport_height=800
 
 folder_colors={
 "res://Components/": "yellow",
+"res://Final_Main/": "red",
 "res://Font/": "green",
 "res://Image/": "blue",
 "res://Scene/": "purple",

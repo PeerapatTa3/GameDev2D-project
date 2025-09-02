@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://buc4xwtqroeec"]
 
-[ext_resource type="Script" uid="uid://bv3m8a34dhaj1" path="res://Script/gameover.gd" id="1_4nh4k"]
-[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_tpdqf"]
-[ext_resource type="Texture2D" uid="uid://b8n7utu8ra13b" path="res://Image/coin/skull.png" id="3_eeur3"]
+[ext_resource type="Script" uid="uid://bv3m8a34dhaj1" path="res://Scene_UI/gameover.gd" id="1_vkykl"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_lpmls"]
+[ext_resource type="Texture2D" uid="uid://b8n7utu8ra13b" path="res://Image/coin/skull.png" id="3_luh5p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_af4fq"]
 bg_color = Color(0, 0, 0, 1)
@@ -37,7 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4nh4k")
+script = ExtResource("1_vkykl")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -55,7 +55,7 @@ offset_top = 256.0
 offset_right = 286.0
 offset_bottom = 393.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("2_tpdqf")
+theme_override_fonts/font = ExtResource("2_lpmls")
 theme_override_font_sizes/font_size = 100
 text = "Game Over"
 horizontal_alignment = 1
@@ -67,7 +67,7 @@ offset_left = 512.0
 offset_top = 405.0
 offset_right = 775.0
 offset_bottom = 473.0
-theme_override_fonts/font = ExtResource("2_tpdqf")
+theme_override_fonts/font = ExtResource("2_lpmls")
 theme_override_font_sizes/font_size = 30
 text = "coin"
 horizontal_alignment = 1
@@ -90,7 +90,7 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_tpdqf")
+theme_override_fonts/font = ExtResource("2_lpmls")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eeur3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_kctv7")
@@ -115,7 +115,7 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_tpdqf")
+theme_override_fonts/font = ExtResource("2_lpmls")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eeur3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_kctv7")
@@ -132,7 +132,7 @@ offset_left = -157.5
 offset_right = 157.5
 offset_bottom = 250.0
 grow_horizontal = 2
-texture = ExtResource("3_eeur3")
+texture = ExtResource("3_luh5p")
 
 [connection signal="pressed" from="Button_Retry" to="." method="_on_button_retry_pressed"]
 [connection signal="pressed" from="Button_Mainmenu" to="." method="_on_button_mainmenu_pressed"]

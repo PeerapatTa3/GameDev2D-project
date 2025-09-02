@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dblidhlvytmce"]
 
-[ext_resource type="Script" uid="uid://ca10ix5ripsky" path="res://game_manager.gd" id="1_x3ly4"]
+[ext_resource type="Script" uid="uid://ca10ix5ripsky" path="res://Scene/Manager/game_manager.gd" id="1_x3ly4"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_a23hh"]
 [ext_resource type="Texture2D" uid="uid://bi67ahx2xwu6h" path="res://Image/coin/coin.png" id="3_84e8k"]
 

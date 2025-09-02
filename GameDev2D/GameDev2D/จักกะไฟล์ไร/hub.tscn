@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://daleoeo0ihors"]
 
-[ext_resource type="Script" uid="uid://cxlp5gjsd8q4h" path="res://hub.gd" id="1_hjueh"]
-[ext_resource type="FontFile" uid="uid://dcdj8r4j8ckad" path="res://Font/Xolonium-Regular.ttf" id="1_l10or"]
+[ext_resource type="Script" uid="uid://cxlp5gjsd8q4h" path="res://จักกะไฟล์ไร/hub.gd" id="1_pu5sp"]
+[ext_resource type="FontFile" uid="uid://dcdj8r4j8ckad" path="res://Font/Xolonium-Regular.ttf" id="2_2blxq"]
 
 [node name="HUB" type="CanvasLayer"]
-script = ExtResource("1_hjueh")
+script = ExtResource("1_pu5sp")
 
 [node name="ScoreLabel" type="Label" parent="."]
 anchors_preset = 10
@@ -12,7 +12,7 @@ anchor_right = 1.0
 offset_top = 40.0
 offset_bottom = 118.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("1_l10or")
+theme_override_fonts/font = ExtResource("2_2blxq")
 theme_override_font_sizes/font_size = 64
 text = "0"
 horizontal_alignment = 1
@@ -32,7 +32,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("1_l10or")
+theme_override_fonts/font = ExtResource("2_2blxq")
 theme_override_font_sizes/font_size = 48
 text = "YeeeHaaa"
 horizontal_alignment = 1

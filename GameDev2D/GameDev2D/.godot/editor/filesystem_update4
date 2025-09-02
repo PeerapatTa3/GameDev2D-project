@@ -21,3 +21,13 @@ res://audio_manager.tscn
 res://win.gd
 res://win.tscn
 res://Image/Minifantasy_Dungeon_Assets/Characters/Human/AnimationInfo.txt
+res://Scene_UI/gameover.tscn
+res://hub.tscn
+res://audio_manager/audio_manager.tscn
+res://Scene_UI/main_menu.tscn
+res://Final_Main/current_main.tscn
+res://Scene_UI/win.tscn
+res://particle/death_particles.tscn
+res://ของตกแต่งฉาก/torch.tscn
+res://จักกะไฟล์ไร/hub.tscn
+res://map/map.tscn

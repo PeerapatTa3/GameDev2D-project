@@ -1,8 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://de1dtfsvidlw2"]
 
-[ext_resource type="Script" uid="uid://dxmvf6a6bemx7" path="res://enemy.gd" id="1_dxifv"]
+[ext_resource type="Script" uid="uid://dxmvf6a6bemx7" path="res://โค๊ดไรไม่รู้มาหาเอา/enemy.gd" id="1_dxifv"]
 [ext_resource type="Texture2D" uid="uid://cbktdnlbm6hq5" path="res://Image/Enemy/Dungeon_Monsters1.png" id="2_4gyqm"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_qi2p4"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
 atlas = ExtResource("2_4gyqm")

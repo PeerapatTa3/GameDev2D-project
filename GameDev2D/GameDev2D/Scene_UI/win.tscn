@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://1plktc0v8yr7"]
 
-[ext_resource type="Script" uid="uid://6krojdy1tgyn" path="res://win.gd" id="1_tmki8"]
-[ext_resource type="Texture2D" uid="uid://cyjldk1vbi6dl" path="res://Image/coin/3.jpg" id="2_yblwc"]
-[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_u4bre"]
+[ext_resource type="Script" uid="uid://6krojdy1tgyn" path="res://Scene_UI/win.gd" id="1_dnivm"]
+[ext_resource type="Texture2D" uid="uid://cyjldk1vbi6dl" path="res://Image/coin/3.jpg" id="2_fgptp"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_8teh7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4x0fk"]
-texture = ExtResource("2_yblwc")
+texture = ExtResource("2_fgptp")
 modulate_color = Color(0.529067, 0.529067, 0.529067, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8e1nn"]
@@ -38,7 +38,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tmki8")
+script = ExtResource("1_dnivm")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -61,7 +61,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_outline_size = 50
-theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_fonts/font = ExtResource("3_8teh7")
 theme_override_font_sizes/font_size = 200
 text = "You Win!"
 horizontal_alignment = 1
@@ -82,7 +82,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_fonts/font = ExtResource("3_8teh7")
 theme_override_font_sizes/font_size = 30
 text = "จัดทำโดย
 นายพีรพล แก้วเจริญสันติสุข
@@ -107,7 +107,7 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_fonts/font = ExtResource("3_8teh7")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8e1nn")
 theme_override_styles/hover = SubResource("StyleBoxFlat_uxvcs")

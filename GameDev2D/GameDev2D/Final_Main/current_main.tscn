@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=4 uid="uid://7bvg36scei8o"]
 
 [ext_resource type="PackedScene" uid="uid://dblidhlvytmce" path="res://Scene/Manager/game_manager.tscn" id="1_q2gln"]
-[ext_resource type="PackedScene" uid="uid://cekymha5vi1j6" path="res://map.tscn" id="1_sopru"]
+[ext_resource type="PackedScene" uid="uid://cekymha5vi1j6" path="res://map/map.tscn" id="1_sopru"]
 [ext_resource type="Texture2D" uid="uid://cudkkdl6iotld" path="res://Image/Minifantasy_Dungeon_Assets/Props/Animated_Props/Props.png" id="2_m2nuf"]
-[ext_resource type="PackedScene" uid="uid://crm3g4ob757qo" path="res://torch.tscn" id="3_dpjw5"]
+[ext_resource type="PackedScene" uid="uid://crm3g4ob757qo" path="res://ของตกแต่งฉาก/torch.tscn" id="3_dpjw5"]
 [ext_resource type="PackedScene" uid="uid://hcbw0fopbrsl" path="res://Scene/GameCharacter/player_v_2.tscn" id="3_fkmki"]
 [ext_resource type="Texture2D" uid="uid://jqwvm1fuqcgi" path="res://Image/Minifantasy_Dungeon_Assets/Tileset/Dungeon Environment.png" id="3_i2e5l"]
 [ext_resource type="Texture2D" uid="uid://b6j7rvmu2qly3" path="res://Image/Minifantasy_Dungeon_Assets/Tileset/Tileset.png" id="4_1nece"]

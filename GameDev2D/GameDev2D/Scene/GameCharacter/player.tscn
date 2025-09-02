@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://cbx1h1ospp86u"]
 
-[ext_resource type="Script" uid="uid://bkgln57l8tcau" path="res://character_body_2d.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://bkgln57l8tcau" path="res://จักกะไฟล์ไร/character_body_2d.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://jrnm72ur7lv6" path="res://Image/Player/Dungeon_HeroManSword1.png" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://624fcsb4r3rf" path="res://Image/Player/Dungeon_HeroMan1.png" id="2_onrkg"]
 
