@@ -1,3 +1,10 @@
+CollisionShape2D
+PointLight2D
+AnimationPlayer
+StaticBody2D
+Sprite2D
+DirectionalLight2D
+CanvasModulate
 AudioStreamPlayer2D
 AudioStreamPlayer
 Node
@@ -6,9 +13,3 @@ CPUParticles2D
 TextureRect
 Panel
 Button
-Label
-Control
-ProgressBar
-TileMapLayer
-Node2D
-VBoxContainer
