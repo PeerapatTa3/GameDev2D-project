@@ -50,13 +50,13 @@ vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Node"]
 anchors_preset = -1
-anchor_left = 0.519
-anchor_top = 0.521
-anchor_right = 0.519
-anchor_bottom = 0.521
-offset_left = -35.3201
+anchor_left = 0.52
+anchor_top = 0.451
+anchor_right = 0.52
+anchor_bottom = 0.451
+offset_left = -35.6
 offset_top = -14.8
-offset_right = 34.6799
+offset_right = 34.4
 offset_bottom = 15.2
 grow_horizontal = 2
 grow_vertical = 2
