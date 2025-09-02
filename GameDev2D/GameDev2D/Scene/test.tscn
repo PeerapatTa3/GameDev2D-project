@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ca5bjrnfbtykt"]
+[gd_scene load_steps=7 format=3 uid="uid://ca5bjrnfbtykt"]
 
 [ext_resource type="PackedScene" uid="uid://mxy4iubwpwox" path="res://Scene/test_ground.tscn" id="1_o6ksy"]
 [ext_resource type="PackedScene" uid="uid://hcbw0fopbrsl" path="res://Scene/GameCharacter/player_v_2.tscn" id="2_vrsyt"]
-[ext_resource type="PackedScene" uid="uid://bfsc8yc2mwpjx" path="res://Scene/Items/damage_potion.tscn" id="4_asc4v"]
+[ext_resource type="PackedScene" uid="uid://bfsc8yc2mwpjx" path="res://Scene/Items/heal_potion.tscn" id="4_asc4v"]
 [ext_resource type="PackedScene" uid="uid://dblidhlvytmce" path="res://Scene/Manager/game_manager.tscn" id="5_1i1hv"]
-[ext_resource type="PackedScene" uid="uid://qda78fh0t4x1" path="res://Scene/GameCharacter/dummy_v_2.tscn" id="6_wf6tq"]
+[ext_resource type="PackedScene" uid="uid://dtrigwed36cc1" path="res://Scene/coin.tscn" id="6_puuaq"]
+[ext_resource type="PackedScene" uid="uid://qda78fh0t4x1" path="res://Components/dummy_v_2.tscn" id="6_wf6tq"]
 
 [node name="Test" type="Node2D"]
 scale = Vector2(6, 6)
@@ -22,3 +23,6 @@ scale = Vector2(0.5, 0.5)
 
 [node name="dummyV2" parent="." instance=ExtResource("6_wf6tq")]
 position = Vector2(86.3333, 5.16667)
+
+[node name="Coin" parent="." instance=ExtResource("6_puuaq")]
+position = Vector2(37.7253, 53.2013)

@@ -86,7 +86,8 @@ theme_override_fonts/font = ExtResource("3_8teh7")
 theme_override_font_sizes/font_size = 30
 text = "จัดทำโดย
 นายพีรพล แก้วเจริญสันติสุข
-นายพีรพัฒน์ แท่นประยุทธ"
+นายพีรพัฒน์ แท่นประยุทธ
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 

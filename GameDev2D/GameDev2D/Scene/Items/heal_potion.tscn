@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfsc8yc2mwpjx"]
+
+[ext_resource type="Script" uid="uid://pub6uib3lkm2" path="res://โค๊ดไรไม่รู้มาหาเอา/heal_potion.gd" id="1_kxr0y"]
+[ext_resource type="Texture2D" uid="uid://cpn40nn1c2vxs" path="res://Image/16x16 RPG Item Pack/Item__29.png" id="2_jaodg"]
+[ext_resource type="PackedScene" uid="uid://dt4ug2m6sh2bb" path="res://Components/item_component.tscn" id="3_5kvsd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eyq1l"]
+radius = 1.27753
+height = 9.9878
+
+[node name="Potion" type="Node2D"]
+script = ExtResource("1_kxr0y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_jaodg")
+
+[node name="ItemComponent" parent="." node_paths=PackedStringArray("Item") instance=ExtResource("3_5kvsd")]
+Item = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemComponent"]
+rotation = 2.4487
+shape = SubResource("CapsuleShape2D_eyq1l")

@@ -26,4 +26,6 @@ func damage(attack : Attack):
 
 func heal(amount : float):
 	HP += amount
+	if HP > MAX_HP:
+		HP = MAX_HP
 	Update()

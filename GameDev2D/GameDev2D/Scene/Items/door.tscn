@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://brbt4hwlg184m"]
+
+[ext_resource type="Script" uid="uid://dfiml63hklhqf" path="res://Scene/Items/door.gd" id="1_6fx8g"]
+[ext_resource type="PackedScene" uid="uid://dt4ug2m6sh2bb" path="res://Components/item_component.tscn" id="2_1p7qb"]
+[ext_resource type="PackedScene" uid="uid://1plktc0v8yr7" path="res://Scene_UI/win.tscn" id="2_3rg0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rg0e"]
+size = Vector2(7, 7.5)
+
+[node name="Door" type="Node2D"]
+script = ExtResource("1_6fx8g")
+to_scene = ExtResource("2_3rg0e")
+
+[node name="ItemComponent" parent="." node_paths=PackedStringArray("Item") instance=ExtResource("2_1p7qb")]
+Item = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemComponent"]
+shape = SubResource("RectangleShape2D_3rg0e")

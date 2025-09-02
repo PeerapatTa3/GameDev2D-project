@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtrigwed36cc1"]
+
+[ext_resource type="Script" uid="uid://10kvmlsdhosa" path="res://Scene/Items/coin.gd" id="1_1g4lx"]
+[ext_resource type="Texture2D" uid="uid://bi67ahx2xwu6h" path="res://Image/coin/coin.png" id="2_o6s8f"]
+[ext_resource type="PackedScene" uid="uid://dt4ug2m6sh2bb" path="res://Components/item_component.tscn" id="3_71t1m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e0oo1"]
+radius = 3.0
+
+[node name="Coin" type="Node2D"]
+script = ExtResource("1_1g4lx")
+amount = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("2_o6s8f")
+
+[node name="ItemComponent" parent="." node_paths=PackedStringArray("Item") instance=ExtResource("3_71t1m")]
+Item = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemComponent"]
+shape = SubResource("CircleShape2D_e0oo1")

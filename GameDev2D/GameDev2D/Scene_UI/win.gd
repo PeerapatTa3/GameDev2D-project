@@ -1,6 +1,7 @@
 extends Control
 
 func _ready() -> void:
+	AudioManager.bg_1.stop()
 	AudioManager.yay.play()
 	await  get_tree().create_timer(1).timeout
 	AudioManager.win.play()
