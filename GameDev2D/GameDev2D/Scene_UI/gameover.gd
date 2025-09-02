@@ -4,6 +4,7 @@ extends CanvasLayer
 func _ready() -> void:
 	AudioManager.gameover.play()
 	$Label2.text = str(":",+GameStat.coin)
+	$Label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 
 func _on_button_retry_pressed() -> void:

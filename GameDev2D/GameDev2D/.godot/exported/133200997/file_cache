@@ -1,7 +1,7 @@
-res://animation/player_attack.tres::4d5b81bc242ae00ac5a4210579b20a4a::1756832564::res://.godot/exported/133200997/export-d05239f2da341a99619018d06503ae45-player_attack.res
-res://animation/player_idle.tres::93dfc449ea2c76262cc8bf8be08ed936::1756832564::res://.godot/exported/133200997/export-dde2951dc2cd4d8c2f1802d8e0fc421a-player_idle.res
-res://animation/player_state.tres::abaa9e73730c52a33cdc9f003efb737d::1756832564::res://.godot/exported/133200997/export-ecf3f89c345d4e5c698a10fd24463a33-player_state.res
-res://animation/player_walk.tres::32b421150d9b1c2de172e5c98994a834::1756832564::res://.godot/exported/133200997/export-f502af18f0c7b9520677080a2f3d95f4-player_walk.res
+res://animation/player_attack.tres::4d5b81bc242ae00ac5a4210579b20a4a::1756833381::res://.godot/exported/133200997/export-d05239f2da341a99619018d06503ae45-player_attack.res
+res://animation/player_idle.tres::93dfc449ea2c76262cc8bf8be08ed936::1756833381::res://.godot/exported/133200997/export-dde2951dc2cd4d8c2f1802d8e0fc421a-player_idle.res
+res://animation/player_state.tres::abaa9e73730c52a33cdc9f003efb737d::1756833381::res://.godot/exported/133200997/export-ecf3f89c345d4e5c698a10fd24463a33-player_state.res
+res://animation/player_walk.tres::32b421150d9b1c2de172e5c98994a834::1756833381::res://.godot/exported/133200997/export-f502af18f0c7b9520677080a2f3d95f4-player_walk.res
 res://audio_manager/audio_manager.tscn::4e2a734574211b10fb670a6ef0653873::1756831152::res://.godot/exported/133200997/export-c25683d132c9509b1cc4241ef60cdc75-audio_manager.scn
 res://Components/dummy_v_2.tscn::17c6389ca7201b4935579432e3cd076b::1756831152::res://.godot/exported/133200997/export-a451fc1d48cf84dbd3ad64c3db0ba679-dummy_v_2.scn
 res://Components/health_component.tscn::f29d660973bdc79492ba5f42e0972445::1756831151::res://.godot/exported/133200997/export-292df2e27548dc8ab57e0dcfd990df52-health_component.scn
@@ -29,8 +29,8 @@ res://Scene/coin.tscn::9c57bb08994cb61e62ecd6eedbddb4ce::1756831152::res://.godo
 res://Scene/test.tscn::a90c8e75c5076b5e28199cfb5e4b2468::1756831152::res://.godot/exported/133200997/export-0be56f45ead8e77bf48322ac61cb00a7-test.scn
 res://Scene/test_ground.tscn::606e5b1ca665062aee044b6fb984cc84::1756654668::res://.godot/exported/133200997/export-081454a989211bca0017519cd9dfba3c-test_ground.scn
 res://Scene_UI/gameover.tscn::481c4e9e23628089bba8665069b15507::1756832811::res://.godot/exported/133200997/export-27c896567e02d370489752ddfc3c68d5-gameover.scn
-res://Scene_UI/main_menu.tscn::a49871b5cf05b4e47731c9d35ceca271::1756832866::res://.godot/exported/133200997/export-33d48cf1644296c35fbf873a1b8335e2-main_menu.scn
-res://Scene_UI/win.tscn::b23c421c4362b631031b5cf6ff0cebb9::1756832564::res://.godot/exported/133200997/export-c61e972358b5fa62505d98d48458605d-win.scn
+res://Scene_UI/main_menu.tscn::8b5ba1cd9fc33d545f333143687f2800::1756833381::res://.godot/exported/133200997/export-33d48cf1644296c35fbf873a1b8335e2-main_menu.scn
+res://Scene_UI/win.tscn::b23c421c4362b631031b5cf6ff0cebb9::1756833178::res://.godot/exported/133200997/export-c61e972358b5fa62505d98d48458605d-win.scn
 res://Script/PlayerMovement.tscn::e9d4cd099c54e74891cd73dab5340409::1756563343::res://.godot/exported/133200997/export-2bb0bf1037661dd3ffe4cb0ccf0fe3a3-PlayerMovement.scn
 res://States/state_machine.tscn::c621fceb11255b3edf5d44c08d618811::1756699068::res://.godot/exported/133200997/export-080a2fca04ad6a0cf338b49e7b67e221-state_machine.scn
 res://ของตกแต่งฉาก/torch.tscn::c28c75a85bb25c09b96099c9521e79a9::1756831152::res://.godot/exported/133200997/export-e205c732b78cb4c10adcd3c2de5aecee-torch.scn
