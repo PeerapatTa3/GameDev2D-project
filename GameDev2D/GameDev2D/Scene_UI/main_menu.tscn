@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://cubqybsmngna0"]
+[gd_scene load_steps=13 format=3 uid="uid://cubqybsmngna0"]
 
 [ext_resource type="Script" uid="uid://cxejc5mg2pv8q" path="res://Scene_UI/main_menu.gd" id="1_kbi2q"]
 [ext_resource type="PackedScene" uid="uid://7bvg36scei8o" path="res://Final_Main/current_main.tscn" id="2_3oys7"]
 [ext_resource type="Texture2D" uid="uid://byv3q3sihhu4v" path="res://Image/Ui/preview.webp" id="3_8gm11"]
+[ext_resource type="Texture2D" uid="uid://dvd6bff4yyxuo" path="res://Image/coin/preview.webp" id="3_kbi2q"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="4_l7q6h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
@@ -50,7 +51,16 @@ corner_radius_bottom_left = 16
 script = ExtResource("1_kbi2q")
 scene = ExtResource("2_3oys7")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.366595, 0.366595, 0.366595, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.975, 19.762)
+texture = ExtResource("3_kbi2q")
+expand_mode = 1
+
 [node name="Panel" type="Panel" parent="."]
+visible = false
 offset_right = 1283.0
 offset_bottom = 803.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_jix8l")

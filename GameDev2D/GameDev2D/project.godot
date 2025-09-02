@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="TraineeBoy"
+config/name="Labyrinth of Shadows"
 run/main_scene="uid://cubqybsmngna0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://จักกะไฟล์ไร/icon.svg"
+config/icon="uid://dvd6bff4yyxuo"
 
 [autoload]
 

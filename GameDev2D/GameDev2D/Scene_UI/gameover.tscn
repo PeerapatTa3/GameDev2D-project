@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://buc4xwtqroeec"]
+[gd_scene load_steps=10 format=3 uid="uid://buc4xwtqroeec"]
 
 [ext_resource type="Script" uid="uid://bv3m8a34dhaj1" path="res://Scene_UI/gameover.gd" id="1_vkykl"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="2_lpmls"]
 [ext_resource type="Texture2D" uid="uid://b8n7utu8ra13b" path="res://Image/coin/skull.png" id="3_luh5p"]
+[ext_resource type="Texture2D" uid="uid://bi67ahx2xwu6h" path="res://Image/coin/coin.png" id="4_lpmls"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_af4fq"]
 bg_color = Color(0, 0, 0, 1)
@@ -54,15 +55,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 512.0
-offset_top = 405.0
-offset_right = 775.0
-offset_bottom = 473.0
+offset_left = 560.0
+offset_top = 407.0
+offset_right = 823.0
+offset_bottom = 475.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_lpmls")
 theme_override_font_sizes/font_size = 30
 text = "coin"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Button_Retry" type="Button" parent="."]
 anchors_preset = 8
@@ -121,6 +125,19 @@ offset_right = 157.5
 offset_bottom = 250.0
 grow_horizontal = 2
 texture = ExtResource("3_luh5p")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -78.0
+offset_top = 400.0
+offset_right = 300.0
+offset_bottom = 832.0
+grow_horizontal = 2
+scale = Vector2(0.186007, 0.180187)
+texture = ExtResource("4_lpmls")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button_Retry" to="." method="_on_button_retry_pressed"]
 [connection signal="pressed" from="Button_Mainmenu" to="." method="_on_button_mainmenu_pressed"]

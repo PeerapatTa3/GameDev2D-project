@@ -2,12 +2,12 @@ extends CanvasLayer
 
 
 func _ready() -> void:
-	GameStat.coin = 0;
 	AudioManager.gameover.play()
-	$Label2.text = str("Coin : ",+GameStat.coin)
+	$Label2.text = str(":",+GameStat.coin)
 
 
 func _on_button_retry_pressed() -> void:
+	GameStat.coin = 0;
 	AudioManager.bg_1.play()
 	get_tree().change_scene_to_file("res://Final_Main/current_main.tscn")
 

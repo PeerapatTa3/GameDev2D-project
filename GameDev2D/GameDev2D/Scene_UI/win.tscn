@@ -1,12 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://1plktc0v8yr7"]
+[gd_scene load_steps=8 format=3 uid="uid://1plktc0v8yr7"]
 
 [ext_resource type="Script" uid="uid://6krojdy1tgyn" path="res://Scene_UI/win.gd" id="1_dnivm"]
 [ext_resource type="Texture2D" uid="uid://cyjldk1vbi6dl" path="res://Image/coin/3.jpg" id="2_fgptp"]
 [ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_8teh7"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4x0fk"]
-texture = ExtResource("2_fgptp")
-modulate_color = Color(0.529067, 0.529067, 0.529067, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8e1nn"]
 
@@ -34,10 +30,11 @@ corner_radius_bottom_left = 16
 [node name="Win" type="CanvasLayer"]
 script = ExtResource("1_dnivm")
 
-[node name="Panel" type="Panel" parent="."]
-offset_right = 1275.0
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.581033, 0.581033, 0.581033, 1)
+offset_right = 1274.0
 offset_bottom = 799.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_4x0fk")
+texture = ExtResource("2_fgptp")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = -1
@@ -71,13 +68,15 @@ offset_right = 471.44
 offset_bottom = 573.2
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "จัดทำโดย 
-นายพีรพล แก้วเจริญสันติสุข
-นายพีรพัฒน์ แท่นประยุทธ"
+text = "Create By
+Peerapol Kaewcharoensantisuk
+Peerapat Taenprayut"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Button_Mainmenu" type="Button" parent="."]
 anchors_preset = 8
