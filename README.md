@@ -31,5 +31,5 @@ Enemys
 
 # Credits
 
-Tileset [[https://krishna-palacio.itch.io/minifantasy-dungeon](https://krishna-palacio.itch.io/minifantasy-dungeon)  
-Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](https://krishna-palacio.itch.io/minifantasy-dungeon)  
+Tileset & Characters [https://krishna-palacio.itch.io/minifantasy-dungeon](https://krishna-palacio.itch.io/minifantasy-dungeon)  
+Music & SFX [https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack](https://leohpaz.itch.io/minifantasy-dungeon-sfx-pack)  
