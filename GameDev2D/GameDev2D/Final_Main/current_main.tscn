@@ -926,7 +926,6 @@ y_sort_enabled = true
 position = Vector2(2404.5, 503.333)
 
 [node name="shadow" type="CanvasModulate" parent="."]
-visible = false
 position = Vector2(3983, 974)
 scale = Vector2(-268.687, 705.771)
 color = Color(0, 0, 0, 1)
