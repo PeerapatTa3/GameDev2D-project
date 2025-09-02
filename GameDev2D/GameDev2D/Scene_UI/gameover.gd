@@ -3,7 +3,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	AudioManager.gameover.play()
-	$Node/Label2.text = str(GameStat.coin)
+	$Node/Label2.text = str("Coin : ",+GameStat.coin)
 
 
 
