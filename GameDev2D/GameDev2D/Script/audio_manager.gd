@@ -6,3 +6,5 @@ extends Node
 @onready var sfx_monster = $sfx_monster
 @onready var sfx_monster_death = $sfx_monster_death
 @onready var bg_1 = $bg_1
+@onready var win = $win
+@onready var yay = $Yay

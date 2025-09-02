@@ -1,0 +1,118 @@
+[gd_scene load_steps=9 format=3 uid="uid://1plktc0v8yr7"]
+
+[ext_resource type="Script" uid="uid://6krojdy1tgyn" path="res://win.gd" id="1_tmki8"]
+[ext_resource type="Texture2D" uid="uid://cyjldk1vbi6dl" path="res://Image/coin/3.jpg" id="2_yblwc"]
+[ext_resource type="FontFile" uid="uid://cy3n0hpvkocuu" path="res://Font/yoster.ttf" id="3_u4bre"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4x0fk"]
+texture = ExtResource("2_yblwc")
+modulate_color = Color(0.529067, 0.529067, 0.529067, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8e1nn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxvcs"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d8ejm"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_am31m"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tmki8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1275.0
+offset_bottom = 799.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4x0fk")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.502
+anchor_top = 0.291
+anchor_right = 0.502
+anchor_bottom = 0.291
+offset_left = -436.56
+offset_top = -143.8
+offset_right = 446.44
+offset_bottom = 57.2
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 50
+theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_font_sizes/font_size = 200
+text = "You Win!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.502
+anchor_top = 0.291
+anchor_right = 0.502
+anchor_bottom = 0.291
+offset_left = -187.56
+offset_top = 399.2
+offset_right = 212.44
+offset_bottom = 522.2
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_font_sizes/font_size = 30
+text = "จัดทำโดย
+นายพีรพล แก้วเจริญสันติสุข
+นายพีรพัฒน์ แท่นประยุทธ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_Mainmenu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_u4bre")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8e1nn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uxvcs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d8ejm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_am31m")
+text = "MainMenu"
+
+[connection signal="pressed" from="Button_Mainmenu" to="." method="_on_button_mainmenu_pressed"]
