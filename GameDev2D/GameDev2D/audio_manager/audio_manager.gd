@@ -9,3 +9,5 @@ extends Node
 @onready var bg_2 = $bg_2
 @onready var win = $win
 @onready var yay = $Yay
+@onready var coin = $sfx_coin
+@onready var potion = $sfx_potion

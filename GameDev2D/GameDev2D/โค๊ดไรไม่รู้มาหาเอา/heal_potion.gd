@@ -7,5 +7,6 @@ func _ready() -> void:
 
 func picked_up():
 	if player:
+		AudioManager.potion.play()
 		player.get_node("HealthComponent").heal(10)
 		queue_free()

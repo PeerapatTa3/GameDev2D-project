@@ -126,10 +126,10 @@ offset_bottom = 61.2
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_outline_size = 10
+theme_override_constants/shadow_outline_size = 30
 theme_override_fonts/font = ExtResource("4_l7q6h")
-theme_override_font_sizes/font_size = 70
-text = "Dungeon of the Lost Memory"
+theme_override_font_sizes/font_size = 100
+text = "Labyrinth of Shadows"
 horizontal_alignment = 1
 vertical_alignment = 1
 

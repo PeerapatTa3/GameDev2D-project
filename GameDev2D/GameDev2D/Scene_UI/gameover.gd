@@ -3,7 +3,7 @@ extends Control
 
 func _ready() -> void:
 	AudioManager.gameover.play()
-	$Label2.text = str("Score : ",+GameStat.coin)
+	$Label2.text = str("Coin : ",+GameStat.coin," /20")
 
 
 func _on_button_retry_pressed() -> void:
