@@ -1,7 +1,6 @@
 extends State
 class_name KnockbackState
 
-var parent
 @export var sfx_hurt : AudioStreamPlayer
 
 var knockback_strength : float = 0
@@ -11,25 +10,28 @@ var knockback_positon : Vector2
 var velocity : Vector2 = Vector2.ZERO
 
 func enter():
-	parent = get_parent().parent
+	pass
 
 func physic_update(delta):
-	if parent.isdead:
+	if owner.isdead:
 		Transitioned.emit(self, "dead")
 		return
 	
+	if !owner.has_method("move_and_slide"):
+		return
+	
 	if knockback_duration > 0:
-		var dir = (parent.global_position - knockback_positon).normalized()
+		var dir = (owner.global_position - knockback_positon).normalized()
 		velocity = dir * knockback_strength
-		parent.velocity = velocity
-		parent.move_and_slide()
+		owner.velocity = velocity
+		owner.move_and_slide()
 		knockback_duration -= delta
 	else :
-		parent.velocity = Vector2.ZERO
+		owner.velocity = Vector2.ZERO
 		Transitioned.emit(self, "idle")
 
 func update(delta):
-	if parent.isdead:
+	if owner.isdead:
 		Transitioned.emit(self, "dead")
 
 func apply_knockback(attack : Attack):

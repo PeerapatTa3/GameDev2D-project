@@ -1,15 +1,14 @@
 extends State
 class_name EnemyIdle
 
-@export var pathfind : PathFindingComponent
-var parent
+@export var detector : PlayerDetector
 
 func enter():
-	parent = get_parent().parent
+	pass
 
 func physic_update(delta):
-	if parent.isdead:
+	if owner.isdead:
 		return
 	
-	if pathfind.detected_goal:
+	if detector.is_collide_with_player():
 		Transitioned.emit(self, "chase")

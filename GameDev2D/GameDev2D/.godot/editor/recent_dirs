@@ -1,6 +1,7 @@
-res://
 res://Components
+res://
+res://Scene/GameCharacter
+res://States
 res://Scene
 res://Scene/Items
 res://animation
-res://Scene/GameCharacter

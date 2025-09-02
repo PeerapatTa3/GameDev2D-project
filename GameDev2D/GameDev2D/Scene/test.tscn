@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://mxy4iubwpwox" path="res://Scene/test_ground.tscn" id="1_o6ksy"]
 [ext_resource type="PackedScene" uid="uid://hcbw0fopbrsl" path="res://Scene/GameCharacter/player_v_2.tscn" id="2_vrsyt"]
-[ext_resource type="PackedScene" uid="uid://doeagxnlrd8l0" path="res://Scene/GameCharacter/dummy.tscn" id="3_vrsyt"]
 [ext_resource type="PackedScene" uid="uid://bfsc8yc2mwpjx" path="res://Scene/Items/damage_potion.tscn" id="4_asc4v"]
 [ext_resource type="PackedScene" uid="uid://dblidhlvytmce" path="res://Scene/Manager/game_manager.tscn" id="5_1i1hv"]
+[ext_resource type="PackedScene" uid="uid://qda78fh0t4x1" path="res://Scene/GameCharacter/dummy_v_2.tscn" id="6_wf6tq"]
 
 [node name="Test" type="Node2D"]
 scale = Vector2(6, 6)
@@ -12,16 +12,13 @@ scale = Vector2(6, 6)
 [node name="TestGround" parent="." instance=ExtResource("1_o6ksy")]
 
 [node name="PlayerV2" parent="." instance=ExtResource("2_vrsyt")]
-position = Vector2(32.3333, 99.6667)
+position = Vector2(29.5, 135)
 
 [node name="DamagePotion" parent="." instance=ExtResource("4_asc4v")]
 position = Vector2(96.8333, 68.6667)
 scale = Vector2(0.5, 0.5)
 
-[node name="Dummy2" parent="." instance=ExtResource("3_vrsyt")]
-position = Vector2(155, 2.33333)
-
-[node name="Dummy" parent="." instance=ExtResource("3_vrsyt")]
-position = Vector2(282.5, 60.6667)
-
 [node name="GameManager" parent="." instance=ExtResource("5_1i1hv")]
+
+[node name="dummyV2" parent="." instance=ExtResource("6_wf6tq")]
+position = Vector2(86.3333, 5.16667)

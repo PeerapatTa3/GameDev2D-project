@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dd6kj3pd5sht0"]
+
+[ext_resource type="Script" uid="uid://chr73q1qrg4hc" path="res://Scene/GameCharacter/projectile.gd" id="1_78m41"]
+[ext_resource type="Texture2D" uid="uid://bnmtpuvovvqa0" path="res://Image/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Arrow(projectile)/Arrow01(32x32).png" id="2_ktgxp"]
+[ext_resource type="PackedScene" uid="uid://dibi7luv2xcet" path="res://Components/hitbox_component.tscn" id="3_fnbfp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyr1c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ktgxp"]
+radius = 2.0
+
+[node name="Projectile" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_78m41")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_ktgxp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape2D_kyr1c")
+
+[node name="HitboxComponent" parent="." instance=ExtResource("3_fnbfp")]
+collision_layer = 0
+attack_damage = 10.0
+knockback_strength = 300.0
+knockback_duration = 0.1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+position = Vector2(4, 0)
+shape = SubResource("CircleShape2D_ktgxp")
