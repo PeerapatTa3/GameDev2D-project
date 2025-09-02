@@ -15,6 +15,8 @@
  
 # Play
 
+v1.0 [https://peerapatta3.github.io/GameDev2D-project/](url)
+
 # Screenshots
 <img width="1281" height="798" alt="image" src="https://github.com/user-attachments/assets/ef0863d7-922f-4ef1-b629-2b32687fb137" />
 <img width="1287" height="806" alt="image" src="https://github.com/user-attachments/assets/5ac75fe2-f219-4d0d-bff1-9d624a839849" />
